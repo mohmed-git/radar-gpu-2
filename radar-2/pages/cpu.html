@@ -207,10 +207,30 @@
         </div>
       </div>
 
-      <!-- [هنا يفضل إضافة رسم بياني يوضح الفرق بين بنيتي المعالج Intel وAMD] -->
-      <div class="visual-hint-cpu">
-        <span class="hint-icon">📊</span>
-        <strong>توصية بصرية:</strong> أضف هنا مخططاً يوضح بنية الـ P-cores وE-cores عند Intel، مقابل بنية CCD وIOD عند AMD
+      <!-- صور المعالجات الحقيقية -->
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin:2rem 0">
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden">
+          <img src="https://sspark.genspark.ai/cfimages?u1=yDOiBEXmfm7bUiDDEsVYqzJMpXhV1aaBXFvW576fzea1f2oB27obcr6yCca2j5eMqBtoOZSQDr5%2FeU6RV0AbGE4Oig%3D%3D&u2=UBrBLkkYwqYVf8ti&width=2560"
+               alt="Intel Core i9-14900K Desktop Processor — معالج Intel LGA1700"
+               loading="lazy" width="600" height="400"
+               style="width:100%;height:200px;object-fit:contain;background:#fff;padding:1rem">
+          <div style="padding:.75rem 1rem;background:var(--bg3)">
+            <div style="font-size:.72rem;font-weight:700;color:#4FC3F7;letter-spacing:1px;text-transform:uppercase;margin-bottom:.2rem">Intel Core</div>
+            <div style="font-size:.9rem;font-weight:700;color:var(--white)">Core i9-14900K</div>
+            <div style="font-size:.8rem;color:var(--text3)">LGA1700 · 24 نواة · $419</div>
+          </div>
+        </div>
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden">
+          <img src="https://sspark.genspark.ai/cfimages?u1=PiDluuYHFI54u%2FHWZ3gSLgm5SBactaPCOkDwtn42C%2B%2BkZoXfyX8ssmw5zYcLQj79NDU5YCAYwhwmi14%2FTATbOrqzNPstkVoCJSn1uUS2Z%2F%2FrHMzH14TxKQ%3D%3D&u2=yxYlxErn8qj%2F6982&width=2560"
+               alt="AMD Ryzen 9 9950X3D Processor — معالج AMD AM5"
+               loading="lazy" width="600" height="400"
+               style="width:100%;height:200px;object-fit:contain;background:#fff;padding:1rem">
+          <div style="padding:.75rem 1rem;background:var(--bg3)">
+            <div style="font-size:.72rem;font-weight:700;color:#F87171;letter-spacing:1px;text-transform:uppercase;margin-bottom:.2rem">AMD Ryzen</div>
+            <div style="font-size:.9rem;font-weight:700;color:var(--white)">Ryzen 9 9950X3D</div>
+            <div style="font-size:.8rem;color:var(--text3)">AM5 · 16 نواة · 3D V-Cache</div>
+          </div>
+        </div>
       </div>
 
       <!-- Intel vs AMD -->
@@ -291,10 +311,81 @@
         </div>
       </div>
 
-      <!-- [هنا يفضل إضافة جدول مقارنة شامل لأبرز المعالجات] -->
-      <div class="visual-hint-cpu">
-        <span class="hint-icon">📋</span>
-        <strong>توصية بصرية:</strong> أضف هنا جدول مقارنة تفصيلي يضم أبرز معالجات Intel وAMD مع النوى والتردد والسعر والأداء
+      <!-- جدول مقارنة أبرز المعالجات -->
+      <div style="margin-bottom:2.5rem">
+        <h2 style="font-size:1.15rem;font-weight:800;color:var(--white);margin-bottom:1.25rem">📊 مقارنة أبرز المعالجات في السوق — 2025</h2>
+        <div style="overflow-x:auto;border-radius:var(--radius-lg);border:1px solid var(--border)">
+          <table style="width:100%;border-collapse:collapse;font-size:.87rem">
+            <thead style="background:var(--bg3)">
+              <tr>
+                <th style="padding:.85rem 1rem;text-align:right;font-weight:700;color:var(--text3);font-size:.76rem;letter-spacing:.5px;text-transform:uppercase;border-bottom:1px solid var(--border)">المعالج</th>
+                <th style="padding:.85rem 1rem;text-align:center;font-weight:700;color:var(--text3);font-size:.76rem;letter-spacing:.5px;text-transform:uppercase;border-bottom:1px solid var(--border)">النوى</th>
+                <th style="padding:.85rem 1rem;text-align:center;font-weight:700;color:var(--text3);font-size:.76rem;letter-spacing:.5px;text-transform:uppercase;border-bottom:1px solid var(--border)">الخيوط</th>
+                <th style="padding:.85rem 1rem;text-align:center;font-weight:700;color:var(--text3);font-size:.76rem;letter-spacing:.5px;text-transform:uppercase;border-bottom:1px solid var(--border)">Boost Clock</th>
+                <th style="padding:.85rem 1rem;text-align:center;font-weight:700;color:var(--text3);font-size:.76rem;letter-spacing:.5px;text-transform:uppercase;border-bottom:1px solid var(--border)">TDP</th>
+                <th style="padding:.85rem 1rem;text-align:center;font-weight:700;color:var(--text3);font-size:.76rem;letter-spacing:.5px;text-transform:uppercase;border-bottom:1px solid var(--border)">السعر</th>
+                <th style="padding:.85rem 1rem;text-align:center;font-weight:700;color:var(--text3);font-size:.76rem;letter-spacing:.5px;text-transform:uppercase;border-bottom:1px solid var(--border)">الأفضل لـ</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom:1px solid rgba(255,255,255,.04)">
+                <td style="padding:.75rem 1rem;text-align:right"><strong style="color:var(--white)">Ryzen 7 7800X3D</strong><br><small style="color:var(--text3)">AMD · AM5</small></td>
+                <td style="padding:.75rem 1rem;text-align:center;color:var(--text)">8</td>
+                <td style="padding:.75rem 1rem;text-align:center;color:var(--text)">16</td>
+                <td style="padding:.75rem 1rem;text-align:center;color:var(--accent);font-weight:700">5.0 GHz</td>
+                <td style="padding:.75rem 1rem;text-align:center;color:var(--text)">120W</td>
+                <td style="padding:.75rem 1rem;text-align:center;color:var(--accent);font-weight:700">$299</td>
+                <td style="padding:.75rem 1rem;text-align:center"><span style="background:rgba(74,222,128,.1);border:1px solid rgba(74,222,128,.2);color:var(--green);padding:.15rem .5rem;border-radius:4px;font-size:.72rem;font-weight:700">🎮 ألعاب</span></td>
+              </tr>
+              <tr style="border-bottom:1px solid rgba(255,255,255,.04)">
+                <td style="padding:.75rem 1rem;text-align:right"><strong style="color:var(--white)">Core i7-14700K</strong><br><small style="color:var(--text3)">Intel · LGA1700</small></td>
+                <td style="padding:.75rem 1rem;text-align:center;color:var(--text)">20</td>
+                <td style="padding:.75rem 1rem;text-align:center;color:var(--text)">28</td>
+                <td style="padding:.75rem 1rem;text-align:center;color:var(--accent);font-weight:700">5.6 GHz</td>
+                <td style="padding:.75rem 1rem;text-align:center;color:var(--text)">125W</td>
+                <td style="padding:.75rem 1rem;text-align:center;color:var(--accent);font-weight:700">$299</td>
+                <td style="padding:.75rem 1rem;text-align:center"><span style="background:rgba(56,189,248,.1);border:1px solid rgba(56,189,248,.2);color:var(--accent);padding:.15rem .5rem;border-radius:4px;font-size:.72rem;font-weight:700">🎮 + 💼 متوازن</span></td>
+              </tr>
+              <tr style="border-bottom:1px solid rgba(255,255,255,.04)">
+                <td style="padding:.75rem 1rem;text-align:right"><strong style="color:var(--white)">Ryzen 9 7950X3D</strong><br><small style="color:var(--text3)">AMD · AM5</small></td>
+                <td style="padding:.75rem 1rem;text-align:center;color:var(--text)">16</td>
+                <td style="padding:.75rem 1rem;text-align:center;color:var(--text)">32</td>
+                <td style="padding:.75rem 1rem;text-align:center;color:var(--accent);font-weight:700">5.7 GHz</td>
+                <td style="padding:.75rem 1rem;text-align:center;color:var(--text)">120W</td>
+                <td style="padding:.75rem 1rem;text-align:center;color:var(--accent);font-weight:700">$699</td>
+                <td style="padding:.75rem 1rem;text-align:center"><span style="background:rgba(251,191,36,.1);border:1px solid rgba(251,191,36,.2);color:var(--amber);padding:.15rem .5rem;border-radius:4px;font-size:.72rem;font-weight:700">🎨 إنتاج + ألعاب</span></td>
+              </tr>
+              <tr style="border-bottom:1px solid rgba(255,255,255,.04)">
+                <td style="padding:.75rem 1rem;text-align:right"><strong style="color:var(--white)">Core i9-14900K</strong><br><small style="color:var(--text3)">Intel · LGA1700</small></td>
+                <td style="padding:.75rem 1rem;text-align:center;color:var(--text)">24</td>
+                <td style="padding:.75rem 1rem;text-align:center;color:var(--text)">32</td>
+                <td style="padding:.75rem 1rem;text-align:center;color:var(--accent);font-weight:700">6.0 GHz</td>
+                <td style="padding:.75rem 1rem;text-align:center;color:var(--text)">125W</td>
+                <td style="padding:.75rem 1rem;text-align:center;color:var(--accent);font-weight:700">$419</td>
+                <td style="padding:.75rem 1rem;text-align:center"><span style="background:rgba(248,113,113,.1);border:1px solid rgba(248,113,113,.2);color:#f87171;padding:.15rem .5rem;border-radius:4px;font-size:.72rem;font-weight:700">⚡ سرعة قصوى</span></td>
+              </tr>
+              <tr style="border-bottom:1px solid rgba(255,255,255,.04)">
+                <td style="padding:.75rem 1rem;text-align:right"><strong style="color:var(--white)">Ryzen 5 7600</strong><br><small style="color:var(--text3)">AMD · AM5</small></td>
+                <td style="padding:.75rem 1rem;text-align:center;color:var(--text)">6</td>
+                <td style="padding:.75rem 1rem;text-align:center;color:var(--text)">12</td>
+                <td style="padding:.75rem 1rem;text-align:center;color:var(--accent);font-weight:700">5.1 GHz</td>
+                <td style="padding:.75rem 1rem;text-align:center;color:var(--text)">65W</td>
+                <td style="padding:.75rem 1rem;text-align:center;color:var(--green);font-weight:700">$169</td>
+                <td style="padding:.75rem 1rem;text-align:center"><span style="background:rgba(74,222,128,.1);border:1px solid rgba(74,222,128,.2);color:var(--green);padding:.15rem .5rem;border-radius:4px;font-size:.72rem;font-weight:700">💰 أفضل قيمة</span></td>
+              </tr>
+              <tr>
+                <td style="padding:.75rem 1rem;text-align:right"><strong style="color:var(--white)">Ryzen 9 9950X3D</strong><br><small style="color:var(--text3)">AMD · AM5 · الأحدث</small></td>
+                <td style="padding:.75rem 1rem;text-align:center;color:var(--text)">16</td>
+                <td style="padding:.75rem 1rem;text-align:center;color:var(--text)">32</td>
+                <td style="padding:.75rem 1rem;text-align:center;color:var(--accent);font-weight:700">5.7 GHz</td>
+                <td style="padding:.75rem 1rem;text-align:center;color:var(--text)">170W</td>
+                <td style="padding:.75rem 1rem;text-align:center;color:var(--accent);font-weight:700">$849</td>
+                <td style="padding:.75rem 1rem;text-align:center"><span style="background:rgba(248,113,113,.1);border:1px solid rgba(248,113,113,.2);color:#f87171;padding:.15rem .5rem;border-radius:4px;font-size:.72rem;font-weight:700">🏆 Flagship 2025</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="font-size:.78rem;color:var(--text3);text-align:center;margin-top:.75rem;font-style:italic">* الأسعار بالدولار الأمريكي، أبريل 2025. تحقق من <a href="compare.html" style="color:var(--accent)">أداة المقارنة</a> للأسعار الحية.</p>
       </div>
 
       <!-- Quick Buying Tips -->
