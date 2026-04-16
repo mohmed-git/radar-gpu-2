@@ -19,6 +19,82 @@
   .ad-horizontal { text-align: center; }
   .ad-sidebar { margin-bottom: 1.25rem; }
   .adsbygoogle { display: block; }
+
+  /* ── GPU Guide Styles ── */
+  .gpu-guide-intro { background: linear-gradient(135deg, var(--bg2), var(--surface)); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 2rem 2.5rem; margin-bottom: 2.5rem; }
+  .gpu-guide-intro h2 { font-size: 1.3rem; font-weight: 800; color: var(--white); margin-bottom: .75rem; }
+  .gpu-guide-intro p { font-size: .95rem; color: var(--text2); line-height: 1.85; margin-bottom: 0; }
+
+  .gpu-terms-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 2.5rem; }
+  .gpu-term-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 1.25rem; }
+  .gpu-term-card .term-name { font-size: .72rem; font-weight: 700; color: var(--accent); letter-spacing: .5px; text-transform: uppercase; margin-bottom: .4rem; }
+  .gpu-term-card .term-desc { font-size: .84rem; color: var(--text2); line-height: 1.65; }
+
+  .gpu-tiers-section { margin-bottom: 2.5rem; }
+  .gpu-tiers-section h2 { font-size: 1.15rem; font-weight: 800; color: var(--white); margin-bottom: 1.25rem; }
+  .gpu-tier-card { display: grid; grid-template-columns: 80px 1fr; gap: 1.25rem; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 1.5rem; margin-bottom: 1rem; transition: var(--transition); align-items: start; }
+  .gpu-tier-card:hover { border-color: var(--border2); transform: translateX(-3px); }
+  .gpu-tier-badge { display: flex; flex-direction: column; align-items: center; gap: .4rem; }
+  .gpu-tier-badge .tier-icon { font-size: 1.75rem; }
+  .gpu-tier-badge .tier-range { font-size: .7rem; font-family: var(--font-data); color: var(--accent); font-weight: 700; text-align: center; }
+  .gpu-tier-info h3 { font-size: 1rem; font-weight: 700; color: var(--white); margin-bottom: .4rem; }
+  .gpu-tier-info p { font-size: .85rem; color: var(--text2); line-height: 1.7; margin-bottom: .6rem; }
+  .gpu-tier-chips { display: flex; flex-wrap: wrap; gap: .4rem; }
+  .gpu-chip { padding: .18rem .65rem; border-radius: 4px; font-size: .72rem; font-weight: 700; font-family: var(--font-data); }
+  .gpu-chip.nvidia { background: rgba(118,185,0,.12); border: 1px solid rgba(118,185,0,.25); color: #a3e635; }
+  .gpu-chip.amd { background: rgba(248,113,113,.1); border: 1px solid rgba(248,113,113,.2); color: #fca5a5; }
+
+  .use-case-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem; margin-bottom: 2.5rem; }
+  .use-case-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 1.5rem; transition: var(--transition); }
+  .use-case-card:hover { border-color: var(--border2); transform: translateY(-2px); }
+  .use-case-card .uc-icon { font-size: 2rem; margin-bottom: .75rem; display: block; }
+  .use-case-card h3 { font-size: .95rem; font-weight: 700; color: var(--white); margin-bottom: .5rem; }
+  .use-case-card p { font-size: .83rem; color: var(--text2); line-height: 1.7; margin-bottom: .75rem; }
+  .use-case-card .uc-rec { font-size: .78rem; background: var(--bg3); border-radius: var(--radius); padding: .5rem .75rem; color: var(--accent); font-weight: 600; display: flex; align-items: center; gap: .4rem; }
+  .use-case-card .uc-rec::before { content: '🏆'; }
+
+  .vram-guide { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 1.75rem; margin-bottom: 2.5rem; }
+  .vram-guide h2 { font-size: 1.1rem; font-weight: 700; color: var(--white); margin-bottom: 1.25rem; }
+  .vram-rows { display: flex; flex-direction: column; gap: .65rem; }
+  .vram-row { display: grid; grid-template-columns: 80px 1fr; gap: 1rem; align-items: center; background: var(--surface); border-radius: var(--radius); padding: .85rem 1rem; }
+  .vram-row .vram-size { font-size: 1.1rem; font-weight: 800; font-family: var(--font-data); color: var(--accent); }
+  .vram-row .vram-desc { font-size: .84rem; color: var(--text2); }
+  .vram-row .vram-desc strong { color: var(--white); }
+
+  .fps-table-wrap { overflow-x: auto; margin-bottom: 2.5rem; border-radius: var(--radius-lg); border: 1px solid var(--border); }
+  .fps-table { width: 100%; border-collapse: collapse; font-size: .85rem; }
+  .fps-table thead { background: var(--bg3); }
+  .fps-table th { padding: .75rem 1rem; text-align: center; font-size: .75rem; font-weight: 700; color: var(--text3); letter-spacing: .5px; text-transform: uppercase; border-bottom: 1px solid var(--border); }
+  .fps-table th:first-child { text-align: right; }
+  .fps-table td { padding: .65rem 1rem; text-align: center; border-bottom: 1px solid rgba(255,255,255,.04); color: var(--text); }
+  .fps-table td:first-child { text-align: right; color: var(--text2); font-size: .82rem; }
+  .fps-table tr:last-child td { border-bottom: none; }
+  .fps-high { color: var(--green) !important; font-weight: 700; }
+  .fps-mid { color: var(--amber) !important; font-weight: 600; }
+  .fps-low { color: var(--red) !important; }
+
+  .gpu-tips-banner { background: linear-gradient(135deg, rgba(56,189,248,.04), rgba(56,189,248,.08)); border: 1px solid rgba(56,189,248,.15); border-radius: var(--radius-lg); padding: 2rem; margin-bottom: 2.5rem; }
+  .gpu-tips-banner h2 { font-size: 1.1rem; font-weight: 700; color: var(--white); margin-bottom: 1.1rem; }
+  .gpu-tips-list { display: grid; grid-template-columns: 1fr 1fr; gap: .75rem; }
+  .gpu-tip { display: flex; gap: .6rem; align-items: flex-start; }
+  .gpu-tip .t-num { width: 22px; height: 22px; background: var(--accent); color: #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: .72rem; font-weight: 800; flex-shrink: 0; margin-top: .1rem; }
+  .gpu-tip p { font-size: .84rem; color: var(--text2); margin: 0; line-height: 1.65; }
+
+  .gpu-cta-banner { background: var(--surface); border: 1px solid rgba(56,189,248,.2); border-radius: var(--radius-lg); padding: 1.5rem 2rem; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; margin-bottom: 2.5rem; flex-wrap: wrap; }
+  .gpu-cta-banner h3 { font-size: 1rem; font-weight: 700; color: var(--white); margin-bottom: .25rem; }
+  .gpu-cta-banner p { font-size: .85rem; color: var(--text2); margin: 0; }
+  .gpu-cta-banner .cta-actions { display: flex; gap: .75rem; flex-shrink: 0; flex-wrap: wrap; }
+
+  .visual-hint-gpu { border: 1px dashed var(--border2); border-radius: var(--radius-lg); padding: 1.25rem; margin: 1.5rem 0; text-align: center; color: var(--text3); font-size: .82rem; background: rgba(56,189,248,.02); }
+  .visual-hint-gpu .hint-icon { font-size: 1.75rem; margin-bottom: .35rem; display: block; }
+
+  @media(max-width: 768px) {
+    .gpu-tier-card { grid-template-columns: 1fr; }
+    .gpu-tips-list { grid-template-columns: 1fr; }
+    .gpu-cta-banner { flex-direction: column; align-items: flex-start; }
+    .vram-row { grid-template-columns: 60px 1fr; }
+    .gpu-guide-intro { padding: 1.5rem; }
+  }
   </style>
 </head>
 <body>
@@ -89,29 +165,363 @@
     </div>
   </section>
 
-  <section class="section" style="background:var(--bg)">
+  <!-- ══════════════════════════════════════════
+       GPU EDUCATIONAL GUIDE — دليل شراء GPU
+       ══════════════════════════════════════════ -->
+  <section class="section" style="background:var(--bg); padding: 4rem 0;">
     <div class="container">
-      <div class="section-head"><h2>دليل شراء بطاقات الرسوميات 2025</h2></div>
+
+      <!-- Intro -->
+      <div class="gpu-guide-intro">
+        <h2>🎮 كيف تختار كرت الشاشة المناسب لك؟</h2>
+        <p>
+          كرت الشاشة (GPU) هو المكوّن الذي يُحدد تجربتك البصرية أكثر من أي مكوّن آخر. لكن الاختيار الصحيح لا يعني دائماً الأغلى — يعني الأنسب
+          <strong>لدقة شاشتك، واستخدامك الفعلي، وميزانيتك.</strong> اللاعب على 1080p لا يحتاج RTX 5090، والمصمم ثلاثي الأبعاد لا يحتاج نفس ما يحتاجه
+          لاعب تنافسي. هذا الدليل يوضّح كل شيء.
+        </p>
+      </div>
+
+      <!-- Key Terms -->
+      <h2 style="font-size:1.15rem;font-weight:800;color:var(--white);margin-bottom:1.1rem">📐 المصطلحات الأساسية التي يجب أن تعرفها</h2>
+      <div class="gpu-terms-grid">
+        <div class="gpu-term-card">
+          <div class="term-name">VRAM (ذاكرة الكرت)</div>
+          <div class="term-desc">الذاكرة الخاصة بكرت الشاشة. كلما كانت أكبر، كلما تمكّنت من تشغيل تكاسير عالية وألعاب بدقة 4K. 8GB كحد أدنى في 2025، 12–16GB للمستقبل.</div>
+        </div>
+        <div class="gpu-term-card">
+          <div class="term-name">FPS (الإطارات في الثانية)</div>
+          <div class="term-desc">عدد الصور التي يرسمها الكرت في الثانية. 60 FPS = سلسة. 144 FPS = رائعة. 240+ FPS = ممتازة للألعاب التنافسية. كلما زاد، كانت التجربة أفضل.</div>
+        </div>
+        <div class="gpu-term-card">
+          <div class="term-name">Ray Tracing</div>
+          <div class="term-desc">تقنية لمحاكاة الإضاءة الواقعية في الألعاب. تعطي صورة أجمل لكن تستهلك قدرة الكرت بشكل كبير. تحتاج كرتاً قوياً للاستفادة منها دون خسارة FPS.</div>
+        </div>
+        <div class="gpu-term-card">
+          <div class="term-name">DLSS / FSR</div>
+          <div class="term-desc">تقنيات "الرفع الذكي" — ترسم الصورة بدقة أقل ثم ترفعها بالذكاء الاصطناعي. تُبقي FPS عالياً مع جودة بصرية قريبة من الدقة الحقيقية. DLSS لـ NVIDIA، FSR لـ AMD.</div>
+        </div>
+        <div class="gpu-term-card">
+          <div class="term-name">TDP / الطاقة</div>
+          <div class="term-desc">قدرة الطاقة التي يستهلكها الكرت بالواط. كرت 300 واط يحتاج PSU أقوى ومبرداً أفضل داخل الكيس. مهم جداً عند ترقية جهاز قديم.</div>
+        </div>
+        <div class="gpu-term-card">
+          <div class="term-name">PCIe Slot</div>
+          <div class="term-desc">المقبس الذي يُركَّب فيه الكرت على اللوحة الأم. PCIe 4.0 و5.0 الأكثر شيوعاً الآن. تأكد من توافق اللوحة الأم مع الكرت قبل الشراء.</div>
+        </div>
+      </div>
+
+      <!-- [هنا يفضل إضافة صورة توضيحية تشرح مكونات كرت الشاشة] -->
+      <div class="visual-hint-gpu">
+        <span class="hint-icon">🖼️</span>
+        <strong>توصية بصرية:</strong> أضف هنا صورة توضيحية تُعرّف بأجزاء كرت الشاشة: الشرائح، VRAM، موصلات الطاقة، مخارج الفيديو
+      </div>
+
+      <!-- GPU Tiers -->
+      <div class="gpu-tiers-section">
+        <h2>💸 فئات كروت الشاشة — من الاقتصادي إلى الاحترافي</h2>
+
+        <div class="gpu-tier-card">
+          <div class="gpu-tier-badge">
+            <div class="tier-icon">💚</div>
+            <div class="tier-range">أقل من $250</div>
+          </div>
+          <div class="gpu-tier-info">
+            <h3>الفئة الاقتصادية (Budget)</h3>
+            <p>مناسبة للألعاب بدقة 1080p على إعدادات متوسطة إلى عالية. كافية للاستخدام اليومي وتشغيل معظم الألعاب بـ 60+ FPS. لا تتوقع Ray Tracing أو 4K هنا.</p>
+            <div class="gpu-tier-chips">
+              <span class="gpu-chip nvidia">RTX 4060 — $299</span>
+              <span class="gpu-chip amd">RX 7600 XT — $249</span>
+              <span class="gpu-chip nvidia">RTX 3060 Ti (مستعمل) — $180</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="gpu-tier-card">
+          <div class="gpu-tier-badge">
+            <div class="tier-icon">🔵</div>
+            <div class="tier-range">$250–$500</div>
+          </div>
+          <div class="gpu-tier-info">
+            <h3>الفئة المتوسطة (Mid-Range)</h3>
+            <p>الأفضل قيمةً للغالبية. تُقدّم أداءً ممتازاً في 1440p وتدعم Ray Tracing بشكل معقول. مناسبة لـ 80% من اللاعبين دون مبالغة في الإنفاق.</p>
+            <div class="gpu-tier-chips">
+              <span class="gpu-chip nvidia">RTX 4070 Super — $599</span>
+              <span class="gpu-chip amd">RX 7800 XT — $449</span>
+              <span class="gpu-chip amd">RX 9070 — $549</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="gpu-tier-card">
+          <div class="gpu-tier-badge">
+            <div class="tier-icon">🟡</div>
+            <div class="tier-range">$500–$800</div>
+          </div>
+          <div class="gpu-tier-info">
+            <h3>الفئة العليا (High-End)</h3>
+            <p>للاعبين الجادين بدقة 1440p أو 4K مع Ray Tracing. هذه الفئة تمنحك تجربة لعب لا تُنسى في الألعاب الحديثة بأعلى الإعدادات. تُعدّ المعيار للـ Content Creators أيضاً.</p>
+            <div class="gpu-tier-chips">
+              <span class="gpu-chip nvidia">RTX 5070 Ti — $749</span>
+              <span class="gpu-chip amd">RX 9070 XT — $599</span>
+              <span class="gpu-chip nvidia">RTX 4080 Super — $999</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="gpu-tier-card">
+          <div class="gpu-tier-badge">
+            <div class="tier-icon">🔴</div>
+            <div class="tier-range">$800+</div>
+          </div>
+          <div class="gpu-tier-info">
+            <h3>الفئة الاحترافية (Flagship)</h3>
+            <p>للمحترفين وعشاق الأداء الأقصى. 4K بـ 120+ FPS مع Ray Tracing الكامل، تصميم ثلاثي الأبعاد، تدريب نماذج AI محلية. السعر مرتفع لكن القدرة لا تُضاهى.</p>
+            <div class="gpu-tier-chips">
+              <span class="gpu-chip nvidia">RTX 5090 — $1,999</span>
+              <span class="gpu-chip nvidia">RTX 5080 — $999</span>
+              <span class="gpu-chip amd">RX 7900 XTX — $879</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- VRAM Guide -->
+      <div class="vram-guide">
+        <h2>💾 كم VRAM تحتاج؟ — الدليل السريع</h2>
+        <div class="vram-rows">
+          <div class="vram-row">
+            <div class="vram-size">8 GB</div>
+            <div class="vram-desc"><strong>يكفي الآن</strong> للألعاب بدقة 1080p–1440p على إعدادات عالية، لكن بعض الألعاب الحديثة بدأت تتجاوز 8GB. الحد الأدنى في 2025.</div>
+          </div>
+          <div class="vram-row">
+            <div class="vram-size">12 GB</div>
+            <div class="vram-desc"><strong>النقطة الآمنة</strong> — يدعم 1440p بشكل مريح وبعض ألعاب 4K. مناسب لـ 3–4 سنوات قادمة دون قلق.</div>
+          </div>
+          <div class="vram-row">
+            <div class="vram-size">16 GB</div>
+            <div class="vram-desc"><strong>المستقبل-آمن</strong> — مثالي لـ 4K Gaming، تصميم بدقة عالية، نماذج AI صغيرة. معيار البطاقات الجديدة لعام 2025.</div>
+          </div>
+          <div class="vram-row">
+            <div class="vram-size">24 GB+</div>
+            <div class="vram-desc"><strong>للمحترفين فقط</strong> — تصيير 3D ضخم، Stable Diffusion بنماذج كبيرة، تدريب نماذج AI. لا تحتاجها للألعاب مهما كانت الدقة.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Use Cases -->
+      <h2 style="font-size:1.15rem;font-weight:800;color:var(--white);margin-bottom:1.25rem">🎯 اختر بحسب استخدامك</h2>
+      <div class="use-case-grid">
+        <div class="use-case-card">
+          <span class="uc-icon">🎮</span>
+          <h3>ألعاب تنافسية</h3>
+          <p>الأولوية لـ FPS عالٍ وليس جمال الصورة. 144–240 FPS في 1080p–1440p. لا تحتاج Ray Tracing — فعّله إذا ما أثّر على الـ FPS.</p>
+          <div class="uc-rec">RTX 4070 Super أو RX 9070 XT</div>
+        </div>
+        <div class="use-case-card">
+          <span class="uc-icon">🌟</span>
+          <h3>ألعاب AAA بأعلى إعدادات</h3>
+          <p>تريد أجمل صورة ممكنة بـ 60–100 FPS مع Ray Tracing. دقة 1440p أو 4K. اللعب ممتعة وليست تنافسية.</p>
+          <div class="uc-rec">RTX 5070 Ti أو RX 9070 XT</div>
+        </div>
+        <div class="use-case-card">
+          <span class="uc-icon">🎨</span>
+          <h3>تصميم جرافيك وثلاثي الأبعاد</h3>
+          <p>Blender وCinema 4D وMaya تستفيد من VRAM الكبيرة أكثر من قدرة المعالج الرسومي الخام. الأولوية للذاكرة وليس الـ FPS.</p>
+          <div class="uc-rec">RX 7900 XTX (24GB) أو RTX 4080</div>
+        </div>
+        <div class="use-case-card">
+          <span class="uc-icon">🤖</span>
+          <h3>ذكاء اصطناعي وStable Diffusion</h3>
+          <p>نماذج AI تستهلك VRAM بشكل مكثف. CUDA Cores في NVIDIA تُسرّع التدريب والاستنتاج بشكل لا تنافسه AMD حتى الآن.</p>
+          <div class="uc-rec">RTX 4080 / 5080 (16GB+ CUDA)</div>
+        </div>
+        <div class="use-case-card">
+          <span class="uc-icon">🎬</span>
+          <h3>مونتاج فيديو وStreamers</h3>
+          <p>تشفير NVENC في NVIDIA الأقوى للـ Streaming. DaVinci Resolve يعمل مع كلا الشركتين بكفاءة. 12–16GB VRAM كافية.</p>
+          <div class="uc-rec">RTX 4070 Ti Super أو RTX 5070</div>
+        </div>
+        <div class="use-case-card">
+          <span class="uc-icon">💻</span>
+          <h3>استخدام عام + ألعاب خفيفة</h3>
+          <p>إذا كنت تلعب ألعاباً متوسطة وتعمل على تطبيقات مكتبية، لا تبالغ في الإنفاق. بطاقة $200–$300 تكفيك تماماً.</p>
+          <div class="uc-rec">RX 7600 XT أو RTX 4060</div>
+        </div>
+      </div>
+
+      <!-- FPS Reference Table -->
+      <!-- [هنا يفضل إضافة رسم بياني للأداء عبر الفئات] -->
+      <div class="visual-hint-gpu">
+        <span class="hint-icon">📊</span>
+        <strong>توصية بصرية:</strong> أضف هنا رسماً بيانياً يقارن FPS لكل فئة سعرية في ألعاب شهيرة عند 1080p و1440p و4K
+      </div>
+
+      <div class="fps-table-wrap">
+        <table class="fps-table">
+          <thead>
+            <tr>
+              <th>البطاقة</th>
+              <th>1080p Ultra</th>
+              <th>1440p Ultra</th>
+              <th>4K Ultra</th>
+              <th>السعر</th>
+              <th>الفئة</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>RTX 5090</td>
+              <td class="fps-high">200+</td>
+              <td class="fps-high">160+</td>
+              <td class="fps-high">100+</td>
+              <td>$1,999</td>
+              <td>Flagship</td>
+            </tr>
+            <tr>
+              <td>RTX 5080</td>
+              <td class="fps-high">175</td>
+              <td class="fps-high">140</td>
+              <td class="fps-high">88</td>
+              <td>$999</td>
+              <td>Flagship</td>
+            </tr>
+            <tr>
+              <td>RTX 5070 Ti</td>
+              <td class="fps-high">160</td>
+              <td class="fps-high">128</td>
+              <td class="fps-mid">78</td>
+              <td>$749</td>
+              <td>High-End</td>
+            </tr>
+            <tr>
+              <td>RX 9070 XT</td>
+              <td class="fps-high">148</td>
+              <td class="fps-high">118</td>
+              <td class="fps-mid">72</td>
+              <td>$599</td>
+              <td>High-End</td>
+            </tr>
+            <tr>
+              <td>RTX 4070 Super</td>
+              <td class="fps-high">135</td>
+              <td class="fps-mid">105</td>
+              <td class="fps-mid">62</td>
+              <td>$599</td>
+              <td>Mid-Range</td>
+            </tr>
+            <tr>
+              <td>RX 7800 XT</td>
+              <td class="fps-high">130</td>
+              <td class="fps-mid">100</td>
+              <td class="fps-mid">58</td>
+              <td>$449</td>
+              <td>Mid-Range</td>
+            </tr>
+            <tr>
+              <td>RTX 4060</td>
+              <td class="fps-mid">100</td>
+              <td class="fps-mid">76</td>
+              <td class="fps-low">42</td>
+              <td>$299</td>
+              <td>Budget</td>
+            </tr>
+            <tr>
+              <td>RX 7600 XT</td>
+              <td class="fps-mid">95</td>
+              <td class="fps-mid">72</td>
+              <td class="fps-low">38</td>
+              <td>$249</td>
+              <td>Budget</td>
+            </tr>
+          </tbody>
+        </table>
+        <p style="font-size:.75rem;color:var(--text3);text-align:center;margin-top:.75rem;font-style:italic">* المتوسط في الألعاب AAA الحديثة بدون Ray Tracing. الأرقام تقريبية وتختلف بحسب اللعبة والمعالج المصاحب.</p>
+      </div>
+
+      <!-- Quick Tips -->
+      <div class="gpu-tips-banner">
+        <h2>✅ نصائح ذهبية قبل شراء كرت الشاشة</h2>
+        <div class="gpu-tips-list">
+          <div class="gpu-tip">
+            <div class="t-num">1</div>
+            <p><strong>حدد دقة شاشتك أولاً</strong> — اللعب على 1080p لا يحتاج RTX 5070 Ti. وفّر المال لمكونات أخرى أو شاشة أفضل.</p>
+          </div>
+          <div class="gpu-tip">
+            <div class="t-num">2</div>
+            <p><strong>راقب تاريخ الأسعار</strong> — استخدم أداة التتبع لمعرفة هل السعر الحالي قريب من الأدنى أم عند القمة.</p>
+          </div>
+          <div class="gpu-tip">
+            <div class="t-num">3</div>
+            <p><strong>تحقق من طول الكرت</strong> — بعض الكروت الكبيرة لا تتسع في كيسات Micro-ATX. قِس المسافة قبل الشراء.</p>
+          </div>
+          <div class="gpu-tip">
+            <div class="t-num">4</div>
+            <p><strong>PSU بهامش 100W+</strong> — إذا كان الكرت 300W، احصل على PSU 750W+. الهامش يضمن الاستقرار ويُطيل العمر.</p>
+          </div>
+          <div class="gpu-tip">
+            <div class="t-num">5</div>
+            <p><strong>لا تنتظر البطاقة "المثالية"</strong> — دائماً هناك جيل جديد في الأفق. اشترِ حين يناسبك السعر ولا تؤجل إلى ما لا نهاية.</p>
+          </div>
+          <div class="gpu-tip">
+            <div class="t-num">6</div>
+            <p><strong>قارن قبل الشراء</strong> — استخدم <a href="compare.html" style="color:var(--accent)">أداة المقارنة</a> لتقييس الفرق الحقيقي بين خياراتك.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA Banner -->
+      <div class="gpu-cta-banner">
+        <div>
+          <h3>وجدت الكرت المناسب؟</h3>
+          <p>قارنه مع بديل آخر أو تصفح تاريخ سعره — ثم فعّل تنبيهاً حين يصل للسعر الذي تريد.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="compare.html" class="btn-primary">⚖️ قارن الآن</a>
+          <a href="cpu.html" class="btn-outline">⚡ تصفح CPU</a>
+        </div>
+      </div>
+
+      <!-- Original Content -->
+      <div class="section-head" style="text-align:right;margin-bottom:1.5rem"><h2>أبرز البطاقات وتحليلها</h2></div>
       <div class="content-grid">
         <article class="content-main">
           <h3 id="rtx4090">RTX 4090 — الملك بلا منازع</h3>
-          <p>تظل RTX 4090 أقوى بطاقة للمستهلكين بفارق كبير. أداؤها في 4K لا يُضاهى، لكن سعرها يجعلها خياراً للمحترفين وعشاق الأداء الأقصى فحسب. انخفض سعرها بنسبة 4.4% خلال الشهر الأخير.</p>
-          <h3 id="rtx4080">RTX 4080 Super — أفضل قيمة في الفئة العليا</h3>
-          <p>بعد تخفيضات 2025، أصبحت RTX 4080 Super تمثل أفضل قيمة في الفئة العليا. فرق الأداء عن 4090 لا يتجاوز 20% بينما فرق السعر يتجاوز 50%.</p>
-          <h3 id="rx7900xtx">RX 7900 XTX — أفضل منافس لـ NVIDIA</h3>
-          <p>تقدم AMD بطاقة قوية بذاكرة VRAM تصل إلى 24GB، مما يجعلها خياراً مثالياً للتصميم ثلاثي الأبعاد والذكاء الاصطناعي بسعر أقل من المنافس المباشر.</p>
-          <h3>RTX 4070 Super — ملك الـ Mid-Range</h3>
-          <p>للاعبين بدقة 1440p، تقدم RTX 4070 Super أداءً استثنائياً بسعر معقول. انخفض سعرها بشكل لافت خلال 2025 مع اقتراب إطلاق الجيل الجديد.</p>
-          <p>تصفح أسعار <a href="cpu.html" style="color:var(--accent)">المعالجات CPU</a> أيضاً، أو استخدم <a href="compare.html" style="color:var(--accent)">أداة المقارنة</a> لاختيار الأنسب لك.</p>
+          <p>تظل RTX 4090 أقوى بطاقة للمستهلكين في السوق المستعملة بفارق كبير. أداؤها في 4K لا يُضاهى، لكن سعرها يجعلها خياراً للمحترفين وعشاق الأداء الأقصى. انخفض سعرها بنسبة 4.4% خلال الشهر الأخير مع دخول RTX 5090 إلى السوق.</p>
+
+          <h3 id="rtx5070ti">RTX 5070 Ti — أفضل قيمة في الفئة العليا الجديدة</h3>
+          <p>مع إطلاق سلسلة RTX 5000، أصبحت RTX 5070 Ti الخيار الأذكى لمن يريد أداءً في 1440p–4K مع Ray Tracing حديث وDLSS 4. قارنها مع <a href="articles/rtx5070ti-vs-rx9070xt.html" style="color:var(--accent);font-weight:600">RX 9070 XT في مقارنتنا الشاملة</a>.</p>
+
+          <h3 id="rx9070xt">RX 9070 XT — أفضل قيمة لكل دولار في 2025</h3>
+          <p>ردّت AMD بقوة مع RX 9070 XT بسعر $599 ونسبة أداء/سعر تتفوق على المنافس. 16GB VRAM، RDNA 4 الجديدة، وFSR 4 المحسّن يجعلانها الخيار الأذكى مالياً لمعظم اللاعبين. <a href="articles/rx9000-series-guide.html" style="color:var(--accent)">اقرأ الدليل الكامل لسلسلة RX 9000</a>.</p>
+
+          <h3>RTX 4070 Super — أفضل قيمة في الفئة المتوسطة-العليا</h3>
+          <p>للاعبين بدقة 1440p، تُقدّم RTX 4070 Super أداءً استثنائياً بسعر انخفض كثيراً في 2025 مع إطلاق الجيل الخامس. صفقة ممتازة إذا كانت الميزانية لا تسمح بالجيل الجديد.</p>
+
+          <p style="margin-top:1.5rem">
+            تصفح أسعار <a href="cpu.html" style="color:var(--accent);font-weight:600">المعالجات CPU</a> لضمان التوازن بين مكونات جهازك،
+            أو استخدم <a href="compare.html" style="color:var(--accent);font-weight:600">أداة المقارنة الشاملة</a> لاتخاذ قرارك.
+            ولمزيد من التحليل، تصفح <a href="blog.html" style="color:var(--accent);font-weight:600">مقالات المدونة</a>.
+          </p>
         </article>
         <aside class="content-sidebar">
           <div class="sidebar-widget">
             <h3>⚡ روابط سريعة</h3>
             <ul>
-              <li><a href="#rtx4090">RTX 4090 — $2,199</a></li>
-              <li><a href="#rtx4080">RTX 4080 Super — $999</a></li>
-              <li><a href="#rx7900xtx">RX 7900 XTX — $879</a></li>
-              <li><a href="compare.html">مقارنة GPU vs GPU</a></li>
+              <li><a href="#rtx5070ti">RTX 5070 Ti — $749</a></li>
+              <li><a href="#rx9070xt">RX 9070 XT — $599</a></li>
+              <li><a href="#rtx4090">RTX 4090 — $1,999</a></li>
+              <li><a href="compare.html">⚖️ مقارنة GPU vs GPU</a></li>
+              <li><a href="articles/rtx5070ti-vs-rx9070xt.html">RTX 5070 Ti vs RX 9070 XT</a></li>
+              <li><a href="articles/best-time-buy-gpu.html">متى أفضل وقت للشراء؟</a></li>
+            </ul>
+          </div>
+          <div class="sidebar-widget" style="background:var(--bg2);border-color:rgba(56,189,248,.15)">
+            <h3>🤔 لمن هذا الكرت؟</h3>
+            <ul>
+              <li style="padding:.4rem 0;font-size:.83rem;color:var(--text2);border-bottom:1px solid rgba(255,255,255,.05)">🎮 <strong>ألعاب تنافسية:</strong> RTX 4070 Super</li>
+              <li style="padding:.4rem 0;font-size:.83rem;color:var(--text2);border-bottom:1px solid rgba(255,255,255,.05)">🌟 <strong>AAA + RT:</strong> RTX 5070 Ti</li>
+              <li style="padding:.4rem 0;font-size:.83rem;color:var(--text2);border-bottom:1px solid rgba(255,255,255,.05)">💰 <strong>قيمة أفضل:</strong> RX 9070 XT</li>
+              <li style="padding:.4rem 0;font-size:.83rem;color:var(--text2)">🎨 <strong>تصميم/AI:</strong> RTX 4080 Super</li>
             </ul>
           </div>
           <div class="sidebar-widget alert-widget">
@@ -125,6 +535,7 @@
           </div>
         </aside>
       </div>
+
     </div>
   </section>
 </main>

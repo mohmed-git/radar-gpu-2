@@ -19,6 +19,77 @@
   .ad-horizontal { text-align: center; }
   .ad-sidebar { margin-bottom: 1.25rem; }
   .adsbygoogle { display: block; }
+
+  /* ── CPU Guide Styles ── */
+  .cpu-guide { max-width: 100%; }
+  .cpu-guide-intro { background: linear-gradient(135deg, var(--bg2), var(--surface)); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 2rem 2.5rem; margin-bottom: 2.5rem; }
+  .cpu-guide-intro h2 { font-size: 1.3rem; font-weight: 800; color: var(--white); margin-bottom: .75rem; }
+  .cpu-guide-intro p { font-size: .95rem; color: var(--text2); line-height: 1.85; margin-bottom: 0; }
+
+  .cpu-cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem; margin-bottom: 2.5rem; }
+  .cpu-info-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 1.5rem; transition: var(--transition); }
+  .cpu-info-card:hover { border-color: var(--border2); transform: translateY(-2px); }
+  .cpu-info-card .card-icon { font-size: 1.75rem; margin-bottom: .75rem; display: block; }
+  .cpu-info-card h3 { font-size: .95rem; font-weight: 700; color: var(--white); margin-bottom: .5rem; }
+  .cpu-info-card p { font-size: .84rem; color: var(--text2); line-height: 1.7; margin: 0; }
+
+  .cpu-vs-section { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-bottom: 2.5rem; }
+  .cpu-brand-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 1.75rem; }
+  .cpu-brand-card.intel-card { border-color: rgba(0, 112, 195, 0.3); }
+  .cpu-brand-card.amd-card { border-color: rgba(237, 28, 36, 0.3); }
+  .cpu-brand-card .brand-name { font-size: .75rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-bottom: .5rem; }
+  .intel-card .brand-name { color: #4FC3F7; }
+  .amd-card .brand-name { color: #F87171; }
+  .cpu-brand-card h3 { font-size: 1rem; font-weight: 700; color: var(--white); margin-bottom: .85rem; }
+  .cpu-brand-card ul { list-style: none; padding: 0; }
+  .cpu-brand-card li { font-size: .85rem; color: var(--text2); padding: .35rem 0; border-bottom: 1px solid rgba(255,255,255,.05); display: flex; gap: .5rem; align-items: flex-start; line-height: 1.5; }
+  .cpu-brand-card li::before { content: '▸'; flex-shrink: 0; }
+  .intel-card li::before { color: #4FC3F7; }
+  .amd-card li::before { color: #F87171; }
+  .cpu-brand-card .verdict { font-size: .82rem; background: var(--bg3); border-radius: var(--radius); padding: .75rem 1rem; margin-top: 1rem; color: var(--text2); line-height: 1.6; }
+
+  .specs-explainer { background: var(--bg2); border-radius: var(--radius-lg); padding: 2rem; margin-bottom: 2.5rem; border: 1px solid var(--border); }
+  .specs-explainer h2 { font-size: 1.15rem; font-weight: 700; color: var(--white); margin-bottom: 1.5rem; }
+  .specs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
+  .spec-item { background: var(--surface); border-radius: var(--radius); padding: 1.1rem; }
+  .spec-item .spec-name { font-size: .75rem; font-weight: 700; color: var(--accent); letter-spacing: .5px; text-transform: uppercase; margin-bottom: .4rem; }
+  .spec-item .spec-desc { font-size: .83rem; color: var(--text2); line-height: 1.65; }
+
+  .cpu-tiers { margin-bottom: 2.5rem; }
+  .cpu-tiers h2 { font-size: 1.15rem; font-weight: 700; color: var(--white); margin-bottom: 1.25rem; }
+  .tier-row { display: flex; gap: 1rem; align-items: flex-start; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 1.25rem; margin-bottom: .75rem; transition: var(--transition); }
+  .tier-row:hover { border-color: var(--border2); }
+  .tier-badge { width: 56px; height: 56px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; flex-shrink: 0; }
+  .tier-badge.budget { background: rgba(74,222,128,.1); border: 1px solid rgba(74,222,128,.2); }
+  .tier-badge.midrange { background: rgba(56,189,248,.1); border: 1px solid rgba(56,189,248,.2); }
+  .tier-badge.highend { background: rgba(251,191,36,.1); border: 1px solid rgba(251,191,36,.2); }
+  .tier-badge.flagship { background: rgba(248,113,113,.1); border: 1px solid rgba(248,113,113,.2); }
+  .tier-content h3 { font-size: .95rem; font-weight: 700; color: var(--white); margin-bottom: .3rem; }
+  .tier-content p { font-size: .84rem; color: var(--text2); margin: 0; line-height: 1.65; }
+  .tier-content .tier-price { font-size: .8rem; font-family: var(--font-data); color: var(--accent); font-weight: 700; margin-top: .3rem; }
+  .tier-content .tier-rec { font-size: .78rem; color: var(--text3); margin-top: .2rem; }
+
+  .buying-tips { background: linear-gradient(135deg, rgba(56,189,248,.04), rgba(56,189,248,.08)); border: 1px solid rgba(56,189,248,.15); border-radius: var(--radius-lg); padding: 2rem; margin-bottom: 2.5rem; }
+  .buying-tips h2 { font-size: 1.1rem; font-weight: 700; color: var(--white); margin-bottom: 1.1rem; }
+  .tips-list { display: grid; grid-template-columns: 1fr 1fr; gap: .75rem; }
+  .tip-item { display: flex; gap: .6rem; align-items: flex-start; }
+  .tip-item .tip-num { width: 22px; height: 22px; background: var(--accent); color: #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: .72rem; font-weight: 800; flex-shrink: 0; margin-top: .1rem; }
+  .tip-item p { font-size: .84rem; color: var(--text2); margin: 0; line-height: 1.65; }
+
+  .cpu-cta-banner { background: var(--surface); border: 1px solid rgba(56,189,248,.2); border-radius: var(--radius-lg); padding: 1.5rem 2rem; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; margin-bottom: 2.5rem; flex-wrap: wrap; }
+  .cpu-cta-banner h3 { font-size: 1rem; font-weight: 700; color: var(--white); margin-bottom: .25rem; }
+  .cpu-cta-banner p { font-size: .85rem; color: var(--text2); margin: 0; }
+  .cpu-cta-banner .cta-actions { display: flex; gap: .75rem; flex-shrink: 0; flex-wrap: wrap; }
+
+  .visual-hint-cpu { border: 1px dashed var(--border2); border-radius: var(--radius-lg); padding: 1.25rem; margin: 1.5rem 0; text-align: center; color: var(--text3); font-size: .82rem; background: rgba(56,189,248,.02); }
+  .visual-hint-cpu .hint-icon { font-size: 1.75rem; margin-bottom: .35rem; display: block; }
+
+  @media(max-width:768px) {
+    .cpu-vs-section { grid-template-columns: 1fr; }
+    .tips-list { grid-template-columns: 1fr; }
+    .cpu-cta-banner { flex-direction: column; align-items: flex-start; }
+    .cpu-guide-intro { padding: 1.5rem; }
+  }
   </style>
 </head>
 <body>
@@ -89,18 +160,204 @@
     </div>
   </section>
 
-  <section class="section" style="background:var(--bg)">
-    <div class="container">
-      <div class="section-head"><h2>دليل شراء المعالجات 2025</h2></div>
+  <!-- ════════════════════════════════════════════
+       CPU EDUCATIONAL GUIDE — دليل شراء المعالجات
+       ════════════════════════════════════════════ -->
+  <section class="section" style="background:var(--bg); padding: 4rem 0;">
+    <div class="container cpu-guide">
+
+      <!-- Intro -->
+      <div class="cpu-guide-intro">
+        <h2>🧠 كيف تختار المعالج المناسب لك؟</h2>
+        <p>
+          المعالج هو قلب جهازك — لكن اختيار المعالج الصحيح لا يعني دائماً اختيار الأغلى. المعالج المناسب هو الذي يتوافق مع
+          <strong>استخدامك الفعلي وميزانيتك</strong>، ويتوازن مع بقية مكونات جهازك. اللاعب الذي يريد FPS عالياً يحتاج نوعاً مختلفاً تماماً عن
+          المُصمّم الذي يعمل على Premiere Pro طوال اليوم. هذا الدليل سيساعدك على اتخاذ القرار الصحيح خطوة بخطوة.
+        </p>
+      </div>
+
+      <!-- Key Specs Explainer -->
+      <div class="specs-explainer">
+        <h2>📐 المواصفات الأساسية التي يجب أن تفهمها</h2>
+        <div class="specs-grid">
+          <div class="spec-item">
+            <div class="spec-name">Cores (النوى)</div>
+            <div class="spec-desc">عدد "العمال" في المعالج. كلما زادت النوى، كلما تمكّن المعالج من تنفيذ مهام متوازية أكثر. مهم جداً للتصميم والمونتاج.</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-name">Threads (الخيوط)</div>
+            <div class="spec-desc">الخيوط هي النوى الافتراضية. معالج 8 نوى بـ 16 خيطاً يتعامل مع 16 مهمة في آنٍ واحد. كلما زادت، كان التعدد أفضل.</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-name">Clock Speed (التردد)</div>
+            <div class="spec-desc">سرعة كل نواة بالجيجاهرتز (GHz). الألعاب تحب التردد العالي أكثر من النوى الكثيرة. ابحث عن Base + Boost Clock.</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-name">Cache (الكاش)</div>
+            <div class="spec-desc">الذاكرة المؤقتة السريعة جداً بداخل المعالج. L3 Cache الكبيرة تُحسّن الأداء في الألعاب بشكل ملحوظ (مثل AMD 3D V-Cache).</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-name">TDP (استهلاك الطاقة)</div>
+            <div class="spec-desc">قدرة الطاقة التي يستهلكها المعالج. يؤثر على اختيار المبرد وقدرة PSU. معالجات TDP عالية تحتاج تبريداً أقوى.</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-name">Socket (المقبس)</div>
+            <div class="spec-desc">معيار التوافق بين المعالج واللوحة الأم. Intel LGA1700 وAMD AM5 هما المعياران السائدان في 2025. تأكد من التوافق!</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- [هنا يفضل إضافة رسم بياني يوضح الفرق بين بنيتي المعالج Intel وAMD] -->
+      <div class="visual-hint-cpu">
+        <span class="hint-icon">📊</span>
+        <strong>توصية بصرية:</strong> أضف هنا مخططاً يوضح بنية الـ P-cores وE-cores عند Intel، مقابل بنية CCD وIOD عند AMD
+      </div>
+
+      <!-- Intel vs AMD -->
+      <h2 style="font-size:1.15rem;font-weight:800;color:var(--white);margin-bottom:1.25rem">⚡ Intel أم AMD — الفرق الحقيقي في 2025</h2>
+      <div class="cpu-vs-section">
+        <div class="cpu-brand-card intel-card">
+          <div class="brand-name">Intel Core</div>
+          <h3>الأفضل في: السرعة وتجربة الألعاب</h3>
+          <ul>
+            <li>تردد Boost مرتفع جداً — يُحدث فارقاً في الألعاب الحساسة للـ CPU</li>
+            <li>معالجات Core Ultra تدمج NPU للذكاء الاصطناعي المحلي</li>
+            <li>لا تحتاج ذاكرة DDR5 بالضرورة — توفير أكبر على RAM</li>
+            <li>أداء Single-Core ممتاز — مثالي للألعاب</li>
+            <li>دعم Thunderbolt 4 مدمج في كثير من الموديلات</li>
+          </ul>
+          <div class="verdict">
+            <strong>اختر Intel إذا:</strong> تلعب ألعاباً بجرافيك عالٍ، تستخدم تطبيقات مُحسّنة لـ Intel، أو تريد أعلى FPS ممكن.
+          </div>
+        </div>
+        <div class="cpu-brand-card amd-card">
+          <div class="brand-name">AMD Ryzen</div>
+          <h3>الأفضل في: القيمة والمهام المتعددة</h3>
+          <ul>
+            <li>نوى أكثر بنفس السعر — مثالي للتصميم والمونتاج وMulti-tasking</li>
+            <li>منصة AM5 ستظل مدعومة حتى 2027+ — استثمار طويل المدى</li>
+            <li>3D V-Cache يُحدث ثورة في أداء الألعاب (Ryzen 7 7800X3D)</li>
+            <li>استهلاك طاقة أكفأ في معظم الفئات</li>
+            <li>أفضل أداء في تطبيقات Blender وCineBench</li>
+          </ul>
+          <div class="verdict">
+            <strong>اختر AMD إذا:</strong> تعمل في التصميم ثلاثي الأبعاد، تشغّل مهام متعددة، أو تريد الأداء الأفضل لكل دولار.
+          </div>
+        </div>
+      </div>
+
+      <!-- CPU Tiers -->
+      <div class="cpu-tiers">
+        <h2>💰 أفضل معالج لكل فئة سعرية — 2025</h2>
+
+        <div class="tier-row">
+          <div class="tier-badge budget">💚</div>
+          <div class="tier-content">
+            <h3>الفئة الاقتصادية — أقل من $200</h3>
+            <p>مثالية للاستخدام اليومي والألعاب الخفيفة. لن تشعر بأي فرق في تصفح الإنترنت، مشاهدة الفيديو، أو الألعاب بدقة 1080p.</p>
+            <div class="tier-price">🏆 AMD Ryzen 5 7600 ($169) | Intel Core i5-14600K ($189)</div>
+            <div class="tier-rec">الأنسب لـ: الألعاب العادية، الدراسة، العمل المكتبي</div>
+          </div>
+        </div>
+
+        <div class="tier-row">
+          <div class="tier-badge midrange">🔵</div>
+          <div class="tier-content">
+            <h3>الفئة المتوسطة — $200 إلى $350</h3>
+            <p>العروض الأفضل من حيث القيمة. تحصل هنا على أداء قوي في الألعاب والمهام المتعددة. هذه الفئة تناسب 80% من المستخدمين.</p>
+            <div class="tier-price">🏆 AMD Ryzen 7 7800X3D ($299) | Intel Core i7-14700K ($299)</div>
+            <div class="tier-rec">الأنسب لـ: الألعاب الجادة، تحرير الفيديو الخفيف، البرمجة</div>
+          </div>
+        </div>
+
+        <div class="tier-row">
+          <div class="tier-badge highend">🟡</div>
+          <div class="tier-content">
+            <h3>الفئة العليا — $350 إلى $550</h3>
+            <p>لمن يجمع بين الألعاب والعمل الاحترافي. معالجات هذه الفئة لن تصبح عائقاً أمام أي بطاقة رسوميات حتى RTX 5080.</p>
+            <div class="tier-price">🏆 AMD Ryzen 9 7900X ($329) | Intel Core i9-14900K ($419)</div>
+            <div class="tier-rec">الأنسب لـ: Streaming + Gaming، تصميم 3D، سكريبتات برمجية ثقيلة</div>
+          </div>
+        </div>
+
+        <div class="tier-row">
+          <div class="tier-badge flagship">🔴</div>
+          <div class="tier-content">
+            <h3>فئة Flagship — أكثر من $550</h3>
+            <p>للمحترفين الذين يعملون على مشاريع ضخمة: تصيير ثلاثي الأبعاد، تحرير 8K، خوادم مصغّرة، أو نماذج ذكاء اصطناعي محلية.</p>
+            <div class="tier-price">🏆 AMD Ryzen 9 7950X ($549) | Intel Core i9-14900KS ($579)</div>
+            <div class="tier-rec">الأنسب لـ: الإنتاج الاحترافي، تدريب نماذج AI، Blender / DaVinci Resolve</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- [هنا يفضل إضافة جدول مقارنة شامل لأبرز المعالجات] -->
+      <div class="visual-hint-cpu">
+        <span class="hint-icon">📋</span>
+        <strong>توصية بصرية:</strong> أضف هنا جدول مقارنة تفصيلي يضم أبرز معالجات Intel وAMD مع النوى والتردد والسعر والأداء
+      </div>
+
+      <!-- Quick Buying Tips -->
+      <div class="buying-tips">
+        <h2>✅ نصائح سريعة قبل شراء معالجك</h2>
+        <div class="tips-list">
+          <div class="tip-item">
+            <div class="tip-num">1</div>
+            <p><strong>تحقق من توافق اللوحة الأم</strong> — Intel LGA1700 لا يعمل مع AMD AM5. اعرف مقبس معالجك قبل الشراء.</p>
+          </div>
+          <div class="tip-item">
+            <div class="tip-num">2</div>
+            <p><strong>توازن مع بطاقة الرسوميات</strong> — معالج $600 مع GPU $200 هدر واضح. وازن بين المكونين لتجنب الاختناق.</p>
+          </div>
+          <div class="tip-item">
+            <div class="tip-num">3</div>
+            <p><strong>راقب تاريخ الأسعار</strong> — أسعار المعالجات تنخفض دورياً. لا تشترِ فور الإطلاق، انتظر شهراً أو اثنين.</p>
+          </div>
+          <div class="tip-item">
+            <div class="tip-num">4</div>
+            <p><strong>المبرد مهم جداً</strong> — المعالجات K و X من Intel وAMD لا تأتي بمبرد. خصص $40–$80 لمبرد جيد.</p>
+          </div>
+          <div class="tip-item">
+            <div class="tip-num">5</div>
+            <p><strong>Ryzen 7 7800X3D للألعاب</strong> — إذا كان هدفك الألعاب فقط، هذا المعالج هو الأفضل قيمةً في 2025 دون منافس.</p>
+          </div>
+          <div class="tip-item">
+            <div class="tip-num">6</div>
+            <p><strong>لا تبالغ في النوى للألعاب</strong> — 6 نوى تكفي لمعظم الألعاب. الألعاب لا تستفيد من 16 نواة كما تفعل تطبيقات التصميم.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA Banner -->
+      <div class="cpu-cta-banner">
+        <div>
+          <h3>هل وجدت المعالج المناسب؟</h3>
+          <p>قارنه مع بطاقة الرسوميات أو مع معالج آخر عبر أداة المقارنة، أو فعّل تنبيهاً حين يصل سعره للمستوى الذي تريد.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="compare.html" class="btn-primary">⚖️ قارن الآن</a>
+          <a href="gpu.html" class="btn-outline">🎮 تصفح GPU</a>
+        </div>
+      </div>
+
+      <!-- Original Content Grid -->
+      <div class="section-head" style="text-align:right;margin-bottom:1.5rem"><h2>أبرز المعالجات والتحليلات</h2></div>
       <div class="content-grid">
         <article class="content-main">
           <h3 id="i9">Intel Core i9-14900K — الأسرع في Single-Core</h3>
-          <p>يتميز i9-14900K بأعلى أداء single-core، مما يجعله الخيار الأول للألعاب الحساسة للتردد. انخفض سعره بنسبة 16% خلال 2025 مع اقتراب إطلاق الجيل الخامس عشر.</p>
+          <p>يتميز i9-14900K بأعلى أداء single-core بين معالجات المستهلكين، مما يجعله الخيار الأول للألعاب الحساسة للتردد كـ CS2 وValorant. في اختبارات 2025، انخفض سعره بنسبة 16% مع اقتراب إطلاق الجيل الخامس عشر — ما يجعله صفقة ممتازة الآن إذا كان لديك لوحة LGA1700.</p>
+
           <h3 id="ryzen9">AMD Ryzen 9 7950X — ملك المهام المتعددة</h3>
-          <p>بـ 16 نواة و32 خيطاً، يتفوق Ryzen 9 7950X في تطبيقات التصيير والمونتاج. انخفض سعره بأكثر من 30% منذ إطلاقه — صفقة ممتازة الآن.</p>
-          <h3>أفضل قيمة: Ryzen 5 7600X</h3>
-          <p>للاعبين بميزانية معقولة، يقدم Ryzen 5 7600X أداءً استثنائياً بسعر لا يتجاوز $179. فارق الأداء عن المعالجات الأغلى لا يتعدى 10% في معظم الألعاب.</p>
-          <p>قارن المعالجات مع <a href="gpu.html" style="color:var(--accent)">بطاقات الرسوميات</a> عبر <a href="compare.html" style="color:var(--accent)">أداة المقارنة</a>.</p>
+          <p>بـ 16 نواة و32 خيطاً، يتفوق Ryzen 9 7950X في تطبيقات التصيير ثلاثي الأبعاد والمونتاج الاحترافي بفارق يتجاوز 40% عن المنافس. انخفض سعره بأكثر من 30% منذ إطلاقه — صفقة استثنائية للمحترفين الآن. تحتاج معه لوحة AM5 وذاكرة DDR5.</p>
+
+          <h3 id="x3d">Ryzen 7 7800X3D — الأكثر مبيعاً للألعاب</h3>
+          <p>تقنية 3D V-Cache غيّرت قواعد اللعبة. يتفوق Ryzen 7 7800X3D على معالجات تُكلّف ضعفه في معظم الألعاب، خاصة تلك التي تعتمد على الـ CPU كـ Microsoft Flight Simulator وTotal War. هو الخيار رقم واحد للاعب الجاد في 2025 ببساطة تامة.</p>
+
+          <p style="margin-top:1.5rem">
+            قارن معالجك المختار مع <a href="gpu.html" style="color:var(--accent);font-weight:600">بطاقات الرسوميات GPU</a> عبر
+            <a href="compare.html" style="color:var(--accent);font-weight:600">أداة المقارنة الشاملة</a> لضمان التوازن المثالي في جهازك.
+            أو اطّلع على <a href="blog.html" style="color:var(--accent);font-weight:600">مقالاتنا التقنية</a> للاختيار الأدق.
+          </p>
         </article>
         <aside class="content-sidebar">
           <div class="sidebar-widget">
@@ -108,7 +365,19 @@
             <ul>
               <li><a href="#i9">Core i9-14900K — $419</a></li>
               <li><a href="#ryzen9">Ryzen 9 7950X — $549</a></li>
-              <li><a href="compare.html">مقارنة CPU vs CPU</a></li>
+              <li><a href="#x3d">Ryzen 7 7800X3D — $299</a></li>
+              <li><a href="compare.html">⚖️ مقارنة CPU vs CPU</a></li>
+              <li><a href="articles/intel-vs-amd-2025.html">Intel vs AMD 2025</a></li>
+              <li><a href="articles/best-cpu-2025.html">أفضل معالجات 2025</a></li>
+            </ul>
+          </div>
+          <div class="sidebar-widget" style="background:var(--bg2);border-color:rgba(56,189,248,.15)">
+            <h3>🤔 لمن هذا المعالج؟</h3>
+            <ul>
+              <li style="padding:.4rem 0;font-size:.83rem;color:var(--text2);border-bottom:1px solid rgba(255,255,255,.05)">🎮 <strong>للألعاب:</strong> Ryzen 7 7800X3D</li>
+              <li style="padding:.4rem 0;font-size:.83rem;color:var(--text2);border-bottom:1px solid rgba(255,255,255,.05)">🎨 <strong>للتصميم:</strong> Ryzen 9 7950X</li>
+              <li style="padding:.4rem 0;font-size:.83rem;color:var(--text2);border-bottom:1px solid rgba(255,255,255,.05)">💼 <strong>للعمل + ألعاب:</strong> i7-14700K</li>
+              <li style="padding:.4rem 0;font-size:.83rem;color:var(--text2)">💰 <strong>للميزانية:</strong> Ryzen 5 7600</li>
             </ul>
           </div>
           <div class="sidebar-widget alert-widget">
@@ -122,6 +391,7 @@
           </div>
         </aside>
       </div>
+
     </div>
   </section>
 </main>

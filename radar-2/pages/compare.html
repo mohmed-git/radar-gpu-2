@@ -11,6 +11,64 @@
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="../css/style.css"/>
   <style>
+  /* ── Compare Guide Styles ── */
+  .compare-guide { background: var(--bg2); padding: 4rem 0; }
+  .how-it-works { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.25rem; margin-bottom: 3rem; }
+  .hiw-step { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 1.5rem; text-align: center; position: relative; }
+  .hiw-step .step-num { width: 36px; height: 36px; background: var(--accent); color: #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: .9rem; font-family: var(--font-data); margin: 0 auto .85rem; }
+  .hiw-step .step-icon { font-size: 1.5rem; margin-bottom: .5rem; display: block; }
+  .hiw-step h3 { font-size: .9rem; font-weight: 700; color: var(--white); margin-bottom: .4rem; }
+  .hiw-step p { font-size: .82rem; color: var(--text2); margin: 0; line-height: 1.65; }
+
+  .results-explainer { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-bottom: 2.5rem; }
+  .re-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 1.5rem; }
+  .re-card h3 { font-size: .95rem; font-weight: 700; color: var(--white); margin-bottom: .85rem; padding-bottom: .6rem; border-bottom: 1px solid var(--border); }
+  .re-card ul { list-style: none; padding: 0; }
+  .re-card li { font-size: .84rem; color: var(--text2); padding: .4rem 0; border-bottom: 1px solid rgba(255,255,255,.04); display: flex; gap: .5rem; line-height: 1.5; }
+  .re-card li:last-child { border-bottom: none; }
+  .re-card li .re-icon { flex-shrink: 0; }
+
+  .example-section { background: var(--surface); border: 1px solid rgba(56,189,248,.2); border-radius: var(--radius-lg); padding: 2rem; margin-bottom: 2.5rem; }
+  .example-section h2 { font-size: 1.1rem; font-weight: 700; color: var(--white); margin-bottom: 1.25rem; display: flex; align-items: center; gap: .5rem; }
+  .example-matchup { display: grid; grid-template-columns: 1fr auto 1fr; gap: 1.25rem; align-items: stretch; margin-bottom: 1.5rem; }
+  .ex-card { background: var(--bg3); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 1.25rem; }
+  .ex-card.winner-ex { border-color: rgba(74,222,128,.3); background: rgba(74,222,128,.04); }
+  .ex-card .ex-name { font-size: 1rem; font-weight: 800; color: var(--white); margin-bottom: .3rem; }
+  .ex-card .ex-brand { font-size: .75rem; color: var(--text3); margin-bottom: .85rem; }
+  .ex-card .ex-price { font-size: 1.5rem; font-weight: 700; font-family: var(--font-data); color: var(--accent); margin-bottom: 1rem; }
+  .ex-row { display: flex; justify-content: space-between; padding: .35rem 0; border-bottom: 1px solid rgba(255,255,255,.05); font-size: .83rem; }
+  .ex-row .ex-label { color: var(--text3); }
+  .ex-row .ex-val { color: var(--text); font-weight: 500; }
+  .ex-row .ex-val.good { color: var(--green); font-weight: 700; }
+  .ex-vs { display: flex; align-items: center; justify-content: center; font-size: 1.3rem; font-weight: 800; color: var(--text3); font-family: var(--font-data); }
+  .ex-winner-badge { display: inline-flex; align-items: center; gap: .35rem; background: rgba(74,222,128,.1); border: 1px solid rgba(74,222,128,.25); color: var(--green); font-size: .78rem; font-weight: 700; padding: .3rem .75rem; border-radius: 4px; margin-bottom: .6rem; }
+  .ex-analysis { background: var(--bg3); border-radius: var(--radius-lg); padding: 1.25rem; }
+  .ex-analysis h3 { font-size: .9rem; font-weight: 700; color: var(--accent); margin-bottom: .65rem; }
+  .ex-analysis p { font-size: .85rem; color: var(--text2); margin: 0; line-height: 1.75; }
+
+  .compare-faq { margin-bottom: 2.5rem; }
+  .compare-faq h2 { font-size: 1.1rem; font-weight: 700; color: var(--white); margin-bottom: 1.1rem; }
+  .faq-item { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); margin-bottom: .65rem; overflow: hidden; }
+  .faq-q { padding: 1rem 1.25rem; font-size: .9rem; font-weight: 600; color: var(--white); cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+  .faq-q .faq-arrow { color: var(--accent); font-size: .75rem; transition: var(--transition); }
+  .faq-a { padding: 0 1.25rem 1rem; font-size: .86rem; color: var(--text2); line-height: 1.8; }
+
+  .compare-cta-bar { background: linear-gradient(135deg, var(--bg3), var(--surface)); border: 1px solid rgba(56,189,248,.2); border-radius: var(--radius-lg); padding: 1.5rem 2rem; display: flex; align-items: center; justify-content: space-between; gap: 1.25rem; flex-wrap: wrap; margin-bottom: 2.5rem; }
+  .compare-cta-bar h3 { font-size: 1rem; font-weight: 700; color: var(--white); margin-bottom: .25rem; }
+  .compare-cta-bar p { font-size: .85rem; color: var(--text2); margin: 0; }
+  .compare-cta-bar .cta-btns { display: flex; gap: .65rem; flex-shrink: 0; flex-wrap: wrap; }
+
+  @media(max-width: 768px) {
+    .results-explainer { grid-template-columns: 1fr; }
+    .example-matchup { grid-template-columns: 1fr; }
+    .ex-vs { display: none; }
+    .compare-cta-bar { flex-direction: column; align-items: flex-start; }
+    .how-it-works { grid-template-columns: 1fr 1fr; }
+  }
+  @media(max-width: 480px) {
+    .how-it-works { grid-template-columns: 1fr; }
+  }
+
     .compare-selectors { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-bottom: 2rem; }
     .compare-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 1.5rem; }
     .compare-card h3 { font-size: .9rem; color: var(--text3); margin-bottom: .75rem; text-transform: uppercase; letter-spacing: 1px; }
@@ -61,7 +119,150 @@
 
 <main>
   <section class="page-hero">
-    <div class="container"><h1>مقارنة القطع</h1><p>قارن بين أي قطعتين جنباً إلى جنب من حيث السعر والمواصفات والقيمة</p></div>
+    <div class="container"><h1>أداة مقارنة قطع الكمبيوتر</h1><p>قارن بين أي قطعتين جنباً إلى جنب — السعر، تاريخه، والقيمة الحقيقية</p></div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       EDUCATIONAL GUIDE — دليل الاستخدام
+       ══════════════════════════════════════ -->
+  <section class="compare-guide">
+    <div class="container">
+
+      <!-- How It Works -->
+      <div style="text-align:center;margin-bottom:2rem">
+        <h2 style="font-size:1.3rem;font-weight:800;color:var(--white);margin-bottom:.5rem">⚖️ كيف تستخدم أداة المقارنة؟</h2>
+        <p style="color:var(--text2);font-size:.9rem">3 خطوات بسيطة للوصول إلى قرار الشراء الصحيح</p>
+      </div>
+      <div class="how-it-works">
+        <div class="hiw-step">
+          <div class="step-num">1</div>
+          <span class="step-icon">🔍</span>
+          <h3>اختر القطعة الأولى</h3>
+          <p>ابحث في القائمة أو اختر GPU أو CPU تريد مقارنته. القائمة تضم أكثر من 200 قطعة.</p>
+        </div>
+        <div class="hiw-step">
+          <div class="step-num">2</div>
+          <span class="step-icon">🔄</span>
+          <h3>اختر القطعة الثانية</h3>
+          <p>اختر البديل الذي تفكر فيه. يمكنك مقارنة GPU بـ GPU، أو CPU بـ CPU، أو حتى GPU بـ CPU.</p>
+        </div>
+        <div class="hiw-step">
+          <div class="step-num">3</div>
+          <span class="step-icon">📊</span>
+          <h3>اقرأ النتائج</h3>
+          <p>ستظهر لك الأسعار الحالية، تاريخ 12 شهر، والقطعة ذات القيمة الأفضل مُحددة بشارة خضراء.</p>
+        </div>
+        <div class="hiw-step">
+          <div class="step-num">4</div>
+          <span class="step-icon">🔔</span>
+          <h3>فعّل تنبيه السعر</h3>
+          <p>بمجرد تحديد اختيارك، فعّل تنبيهاً ليصلك إشعار حين ينخفض سعر القطعة للمستوى الذي تريده.</p>
+        </div>
+      </div>
+
+      <!-- What Results Mean -->
+      <h2 style="font-size:1.1rem;font-weight:800;color:var(--white);margin-bottom:1.1rem">📖 ماذا تعني النتائج؟</h2>
+      <div class="results-explainer">
+        <div class="re-card">
+          <h3>📈 قراءة بيانات السعر</h3>
+          <ul>
+            <li><span class="re-icon">💰</span><span><strong>السعر الحالي:</strong> آخر سعر رُصد للقطعة في السوق.</span></li>
+            <li><span class="re-icon">📅</span><span><strong>السعر قبل شهر:</strong> السعر قبل 30 يوماً — يُظهر الاتجاه: ارتفع أم انخفض؟</span></li>
+            <li><span class="re-icon">▲</span><span><strong>أعلى سعر (52 أسبوع):</strong> إذا كان السعر الحالي قريباً منه، ربما ينخفض قريباً.</span></li>
+            <li><span class="re-icon">▼</span><span><strong>أدنى سعر (52 أسبوع):</strong> إذا كان السعر الحالي قريباً منه، هذا وقت شراء جيد!</span></li>
+            <li><span class="re-icon">📉</span><span><strong>فوق القاع بـ X%:</strong> كلما كانت النسبة أقل، كلما كان السعر أقرب لأدنى نقطة.</span></li>
+          </ul>
+        </div>
+        <div class="re-card">
+          <h3>🏆 كيف نحدد "أفضل قيمة"؟</h3>
+          <ul>
+            <li><span class="re-icon">📐</span><span>نقيس نسبة السعر الحالي إلى أعلى سعر تاريخي.</span></li>
+            <li><span class="re-icon">⬇️</span><span>القطعة التي انخفضت أكثر نسبياً من ذروتها تحصل على شارة <strong>"أفضل قيمة"</strong>.</span></li>
+            <li><span class="re-icon">📊</span><span>المخطط البياني يُريك تاريخ السعر كاملاً — تمعّن في الاتجاه العام.</span></li>
+            <li><span class="re-icon">🟢</span><span>الشارة الخضراء تعني: هذه القطعة أوفر مالياً الآن مقارنة بسجلها التاريخي.</span></li>
+            <li><span class="re-icon">⚠️</span><span>لا تعتمد على السعر وحده — راجع مقالاتنا لمقارنة الأداء الفعلي.</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Practical Example -->
+      <div class="example-section">
+        <h2>🔬 مثال عملي: RTX 5080 مقابل RX 9070 XT</h2>
+        <p style="color:var(--text2);font-size:.88rem;margin-bottom:1.5rem">هكذا تبدو نتائج مقارنة فعلية — وهكذا تفسّرها بشكل صحيح</p>
+        <div class="example-matchup">
+          <div class="ex-card">
+            <div class="ex-name">RTX 5080</div>
+            <div class="ex-brand">NVIDIA · Flagship · 16 GB GDDR7</div>
+            <div class="ex-price">$999</div>
+            <div class="ex-row"><span class="ex-label">السعر قبل شهر</span><span class="ex-val">$1,049</span></div>
+            <div class="ex-row"><span class="ex-label">التغيّر</span><span class="ex-val" style="color:var(--green)">▼ 4.8%</span></div>
+            <div class="ex-row"><span class="ex-label">أعلى سعر (52أسبوع)</span><span class="ex-val" style="color:var(--red)">$1,199</span></div>
+            <div class="ex-row"><span class="ex-label">أدنى سعر (52أسبوع)</span><span class="ex-val" style="color:var(--green)">$949</span></div>
+            <div class="ex-row"><span class="ex-label">فوق القاع بـ</span><span class="ex-val">+5.3%</span></div>
+            <div class="ex-row"><span class="ex-label">القيمة التاريخية</span><span class="ex-val">83% من الذروة ✓</span></div>
+          </div>
+          <div class="ex-vs">VS</div>
+          <div class="ex-card winner-ex">
+            <div class="ex-winner-badge">◈ أفضل قيمة حالياً</div>
+            <div class="ex-name">RX 9070 XT</div>
+            <div class="ex-brand">AMD · High-End · 16 GB GDDR6</div>
+            <div class="ex-price">$599</div>
+            <div class="ex-row"><span class="ex-label">السعر قبل شهر</span><span class="ex-val">$629</span></div>
+            <div class="ex-row"><span class="ex-label">التغيّر</span><span class="ex-val" style="color:var(--green)">▼ 4.8%</span></div>
+            <div class="ex-row"><span class="ex-label">أعلى سعر (52أسبوع)</span><span class="ex-val" style="color:var(--red)">$649</span></div>
+            <div class="ex-row"><span class="ex-label">أدنى سعر (52أسبوع)</span><span class="ex-val good">$579</span></div>
+            <div class="ex-row"><span class="ex-label">فوق القاع بـ</span><span class="ex-val good">+3.5%</span></div>
+            <div class="ex-row"><span class="ex-label">القيمة التاريخية</span><span class="ex-val good">92% من الذروة ✓✓</span></div>
+          </div>
+        </div>
+        <div class="ex-analysis">
+          <h3>🧠 كيف تقرأ هذه النتائج؟</h3>
+          <p>
+            <strong>RTX 5080</strong> تُكلّف $999 وهي عند 83% من ذروتها ($1,199) — أي أنها انخفضت بشكل معقول لكنها ليست عند أدنى مستوياتها.
+            <strong>RX 9070 XT</strong> بالمقابل تُكلّف $599 وهي عند 92% من ذروتها ($649) — أي أنها قريبة جداً من أدنى سعر لها تاريخياً، وهو
+            مؤشر جيد أن هذا توقيت شراء مناسب. فارق الأداء بينهما حوالي 35–40% لصالح RTX 5080، لكن فارق السعر 67%.
+            <strong>النتيجة:</strong> إذا كان أداء RX 9070 XT يكفيك، فهي الأذكى مالياً الآن.
+            إذا أردت الفارق الكبير في الأداء، RTX 5080 مبررة السعر نسبياً مقارنة بتاريخها.
+            <a href="articles/rtx5070ti-vs-rx9070xt.html" style="color:var(--accent);font-weight:600">اقرأ مقارنتنا التفصيلية ←</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <div class="compare-faq">
+        <h2>❓ أسئلة شائعة عن أداة المقارنة</h2>
+        <div class="faq-item">
+          <div class="faq-q">هل يمكنني مقارنة GPU بـ CPU؟ <span class="faq-arrow">▼</span></div>
+          <div class="faq-a">نعم! الأداة تدعم مقارنة أي نوعين. لكن في هذه الحالة الهدف هو مقارنة الأسعار وتاريخها فقط، وليس الأداء (إذ لا معنى لمقارنة أداء GPU بـ CPU).</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">ما معنى "شارة أفضل قيمة" باللون الأخضر؟ <span class="faq-arrow">▼</span></div>
+          <div class="faq-a">الشارة الخضراء تعني أن هذه القطعة قريبة أكثر من أدنى نقطة سعرية في السنة الأخيرة نسبةً إلى الأخرى. هي مؤشر على قوة السعر الحالي مقارنة بالسجل التاريخي — لكن دائماً اقرن هذا بتحليل الأداء الفعلي.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">كم مرة تُحدَّث الأسعار؟ <span class="faq-arrow">▼</span></div>
+          <div class="faq-a">أسعارنا تُحدَّث يومياً من مصادر متعددة. إذا رأيت فارقاً بين السعر المعروض وسعر المتجر، قد يكون هناك تغيير خلال الساعات الأخيرة. البيانات للأغراض المعلوماتية والقرار النهائي يجب التحقق منه في المتجر.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">هل المقارنة مناسبة لاتخاذ قرار الشراء النهائي؟ <span class="faq-arrow">▼</span></div>
+          <div class="faq-a">الأداة ممتازة لمقارنة الأسعار والقيمة التاريخية. لكن لاتخاذ قرار شراء شامل، نوصي بقراءة مقالاتنا التقنية التي تُحلّل الأداء الفعلي. الأداة تجيب "هل السعر مناسب؟" والمقالات تجيب "هل الأداء يستحق؟"</div>
+        </div>
+      </div>
+
+      <!-- CTA Bar -->
+      <div class="compare-cta-bar">
+        <div>
+          <h3>جاهز لمقارنة قطعتك؟</h3>
+          <p>ابدأ المقارنة أدناه، أو اقرأ تحليلاتنا لفهم الفروق الأعمق</p>
+        </div>
+        <div class="cta-btns">
+          <a href="gpu.html" class="btn-primary">🎮 تصفح GPU</a>
+          <a href="cpu.html" class="btn-outline">⚡ تصفح CPU</a>
+          <a href="blog.html" class="btn-outline">📚 المقالات</a>
+        </div>
+      </div>
+
+    </div>
   </section>
 
   <section class="section" style="background:var(--bg2)">
