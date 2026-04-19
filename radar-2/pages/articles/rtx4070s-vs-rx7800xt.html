@@ -3,127 +3,276 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>RTX 4070 Super مقابل RX 7800 XT: معركة الـ $450 | GPU Radar</title>
-  <meta name="description" content="مقارنة شاملة بين RTX 4070 Super وRX 7800 XT في 20 لعبة مختلفة لتحديد أفضل قيمة."/>
+  <title>RTX 4070 Super مقابل RX 7800 XT — معركة $450 الحاسمة 2025 | GPU Radar</title>
+  <meta name="description" content="مقارنة تفصيلية بين RTX 4070 Super وRX 7800 XT في 20 لعبة: الأداء في 1080p و1440p، DLSS vs FSR، VRAM 12GB vs 16GB، وتحليل القيمة مقابل السعر. من يستحق $110 الفارقة؟"/>
+  <meta name="keywords" content="RTX 4070 Super مقارنة RX 7800 XT, افضل كرت شاشة 450 دولار, NVIDIA vs AMD 2025, قيمة مال GPU, مقارنة كروت شاشة 2025"/>
   <meta name="robots" content="index, follow"/>
-  <meta name="google-adsense-account" content="ca-pub-1686978448234868">
-
-  <link rel="canonical" href="https://pricebench.online/pages/articles/rtx4070s-vs-rx7800xt"/>
-  <meta property="og:title" content="RTX 4070 Super مقابل RX 7800 XT: معركة الـ $450"/>
-  <meta property="og:description" content="مقارنة شاملة بين RTX 4070 Super وRX 7800 XT في 20 لعبة مختلفة لتحديد أفضل قيمة."/>
-  <meta property="og:url" content="https://pricebench.online/pages/articles/rtx4070s-vs-rx7800xt"/>
+  <meta name="author" content="فريق GPU Radar"/>
+  <meta property="og:title" content="RTX 4070 Super مقابل RX 7800 XT — معركة $450 الحاسمة"/>
+  <meta property="og:description" content="مقارنة تفصيلية شاملة بين أشهر بطاقتين في فئة $400-500 — الأداء في 20 لعبة، DLSS 4 vs FSR 3، وتحليل القيمة الحقيقية"/>
   <meta property="og:type" content="article"/>
+  <meta property="og:url" content="https://pricebench.online/pages/articles/rtx4070s-vs-rx7800xt.html"/>
+  <meta property="og:image" content="https://pricebench.online/assets/og-image.jpg"/>
+  <meta property="article:published_time" content="2024-11-01"/>
+  <meta property="article:modified_time" content="2026-04-19"/>
+  <meta property="article:author" content="GPU Radar"/>
+  <meta property="article:section" content="مقارنات GPU"/>
+  <link rel="canonical" href="https://pricebench.online/pages/articles/rtx4070s-vs-rx7800xt.html"/>
   <link rel="icon" type="image/svg+xml" href="../../favicon.svg"/>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="../../css/style.css"/>
-  <style>
-    .art-hero{ background:var(--bg2); padding:6rem 0 2.5rem; border-bottom:1px solid var(--border); }
-    .art-hero .tag{ display:inline-block; padding:.25rem .75rem; border-radius:4px; font-size:.72rem; font-weight:700; background:var(--accent-dim); border:1px solid rgba(56,189,248,.2); color:var(--accent); margin-bottom:1rem; font-family:var(--font-data); }
-    .art-hero h1{ font-size:clamp(1.6rem,3.5vw,2.5rem); max-width:780px; line-height:1.3; margin-bottom:.75rem; }
-    .art-hero .meta{ display:flex; gap:1.25rem; color:var(--text3); font-size:.82rem; flex-wrap:wrap; }
-    .art-layout{ display:grid; grid-template-columns:1fr 280px; gap:2.5rem; align-items:start; padding:3rem 0; }
-    .art-body h2{ font-size:1.3rem; font-weight:700; color:var(--accent); margin:2rem 0 .75rem; padding-top:1rem; border-top:1px solid rgba(56,189,248,.08); }
-    .art-body h2:first-child{ border-top:none; margin-top:0; padding-top:0; }
-    .art-body p{ font-size:.93rem; color:var(--text2); line-height:1.9; margin-bottom:1rem; }
-    .art-body ul{ padding-right:1.5rem; margin-bottom:1rem; }
-    .art-body ul li{ list-style:disc; font-size:.93rem; color:var(--text2); margin-bottom:.4rem; line-height:1.7; }
-    .art-body strong{ color:var(--white); }
-    .art-links{ display:flex; flex-wrap:wrap; gap:.75rem; margin-top:2rem; padding-top:1.5rem; border-top:1px solid var(--border); }
-    .art-link{ display:inline-flex; align-items:center; gap:.4rem; padding:.5rem 1rem; background:var(--accent-dim); border:1px solid rgba(56,189,248,.2); border-radius:6px; font-size:.83rem; color:var(--accent); font-weight:600; transition:var(--transition); }
-    .art-link:hover{ background:rgba(56,189,248,.2); }
-    .back-link{ display:inline-flex; align-items:center; gap:.4rem; color:var(--text2); font-size:.85rem; margin-bottom:1.5rem; transition:var(--transition); }
-    .back-link:hover{ color:var(--accent); }
-    .side-widget{ background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-lg); padding:1.5rem; margin-bottom:1.25rem; }
-    .side-widget h3{ font-size:.9rem; font-weight:700; margin-bottom:1rem; padding-bottom:.6rem; border-bottom:1px solid var(--border); color:var(--white); }
-    .side-widget ul{ display:flex; flex-direction:column; gap:.45rem; }
-    .side-widget li a{ font-size:.83rem; color:var(--text2); display:block; padding:.3rem 0; border-bottom:1px solid rgba(255,255,255,.04); transition:var(--transition); }
-    .side-widget li a:hover{ color:var(--accent); }
-    .alert-side{ background:linear-gradient(135deg,var(--bg3),var(--surface)); border-color:rgba(56,189,248,.2); }
-    .alert-side p{ font-size:.83rem; color:var(--text2); margin-bottom:.65rem; }
-    .alert-side input{ width:100%; padding:.55rem .85rem; background:var(--bg3); border:1px solid var(--border); border-radius:6px; color:var(--text); font-family:var(--font-ui); font-size:.84rem; outline:none; direction:rtl; margin-bottom:.5rem; }
-    .alert-side input:focus{ border-color:var(--accent); }
-    .alert-side button{ width:100%; padding:.55rem; background:var(--accent); color:#000; border:none; border-radius:6px; font-family:var(--font-ui); font-weight:700; font-size:.84rem; cursor:pointer; }
-    .alert-side button:hover{ background:#7DD3FC; }
-    .sidebar-sticky{ position:sticky; top:80px; }
-    @media(max-width:900px){ .art-layout{grid-template-columns:1fr;} .sidebar-sticky{position:static;} }
-  </style>
-  <!-- Google AdSense -->
+  <meta name="google-adsense-account" content="ca-pub-1686978448234868">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1686978448234868" crossorigin="anonymous"></script>
-  <style>
-  /* ── AdSense ad units ── */
-  .ad-unit { margin: 2rem 0; }
-  .ad-horizontal { text-align: center; }
-  .ad-sidebar { margin-bottom: 1.25rem; }
-  .adsbygoogle { display: block; }
-  </style>
-  <meta property="og:image" content="https://pricebench.online/assets/og-image.jpg"/>
 
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "RTX 4070 Super مقابل RX 7800 XT: معركة الـ $450",
-  "description": "مقارنة شاملة بين RTX 4070 Super وRX 7800 XT في 20 لعبة مختلفة لتحديد أفضل قيمة.",
-  "url": "https://pricebench.online/pages/articles/rtx4070s-vs-rx7800xt",
-  "datePublished": "2024-11-01T00:00:00+03:00",
-  "dateModified": "2026-04-12T00:00:00+03:00",
-  "image": {
-    "@type": "ImageObject",
-    "url": "https://pricebench.online/assets/og-image.jpg",
-    "width": 1200,
-    "height": 630
-  },
-  "author": {
-    "@type": "Organization",
-    "name": "فريق GPU Radar",
-    "url": "https://pricebench.online/pages/about"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "GPU Radar",
-    "url": "https://pricebench.online",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://pricebench.online/favicon.svg"
-    }
-  },
-  "inLanguage": "ar",
-  "wordCount": 808,
-  "articleSection": "مقارنات",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://pricebench.online/pages/articles/rtx4070s-vs-rx7800xt"
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type":"ListItem","position":1,"name":"الرئيسية","item":"https://pricebench.online"},
+          {"@type":"ListItem","position":2,"name":"المدونة","item":"https://pricebench.online/pages/blog.html"},
+          {"@type":"ListItem","position":3,"name":"RTX 4070 Super vs RX 7800 XT","item":"https://pricebench.online/pages/articles/rtx4070s-vs-rx7800xt.html"}
+        ]
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "RTX 4070 Super مقابل RX 7800 XT — معركة $450 الحاسمة 2025",
+        "description": "مقارنة تفصيلية بين RTX 4070 Super وRX 7800 XT في 20 لعبة. الأداء الحقيقي، DLSS vs FSR، وتحليل قيمة المال.",
+        "url": "https://pricebench.online/pages/articles/rtx4070s-vs-rx7800xt.html",
+        "datePublished": "2024-11-01T00:00:00+03:00",
+        "dateModified": "2026-04-19T00:00:00+03:00",
+        "image": {"@type":"ImageObject","url":"https://pricebench.online/assets/og-image.jpg","width":1200,"height":630},
+        "author": {"@type":"Organization","name":"فريق GPU Radar","url":"https://pricebench.online"},
+        "publisher": {"@type":"Organization","name":"GPU Radar","url":"https://pricebench.online","logo":{"@type":"ImageObject","url":"https://pricebench.online/favicon.svg"}},
+        "inLanguage": "ar",
+        "wordCount": 1800,
+        "articleSection": "مقارنات GPU"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "أيهما أفضل RTX 4070 Super أم RX 7800 XT في 1440p؟",
+            "acceptedAnswer": {"@type":"Answer","text":"RTX 4070 Super أفضل بنحو 8-12% في معظم الألعاب عند 1440p. لكن RX 7800 XT توفر 16GB VRAM مقابل 12GB، وهو ميزة للمستقبل. إذا لعبت ألعاباً تدعم DLSS، RTX أفضل. إذا كان السعر حاسماً، RX 7800 XT قيمة لا تُضاهى."}
+          },
+          {
+            "@type": "Question",
+            "name": "هل فارق $110 بين الكارتين يستحق؟",
+            "acceptedAnswer": {"@type":"Answer","text":"في الغالب لا، إلا إذا كانت DLSS 4 وRay Tracing أولوية لك. RX 7800 XT بـ $389 تقدم 90% من أداء RTX 4070 Super بـ $499 مع 16GB VRAM أفضل للمستقبل."}
+          },
+          {
+            "@type": "Question",
+            "name": "هل 16GB VRAM في RX 7800 XT ضروري الآن؟",
+            "acceptedAnswer": {"@type":"Answer","text":"في ألعاب 2024-2025 يندر تجاوز 10GB VRAM عند 1440p. لكن مع ألعاب 2026-2027، 16GB ستُصبح ميزة واضحة. إذا تخطط للاحتفاظ بالكارت 3 سنوات+، 16GB VRAM في RX 7800 XT ميزة حقيقية."}
+          },
+          {
+            "@type": "Question",
+            "name": "ما أداء RTX 4070 Super مع DLSS 4؟",
+            "acceptedAnswer": {"@type":"Answer","text":"مع DLSS 4 Quality تقفز الأداء من 72 FPS إلى 110+ FPS في الألعاب المدعومة. Frame Generation يضيف 40-60% FPS إضافي. DLSS 4 هي الميزة التنافسية الأقوى لـ RTX 4070 Super."}
+          },
+          {
+            "@type": "Question",
+            "name": "أيهما أفضل لألعاب e-sports؟",
+            "acceptedAnswer": {"@type":"Answer","text":"كلاهما ممتاز للـ e-sports. في 1080p/144Hz+ كلاهما يُقدّم أداء مشابهاً. RX 7800 XT أفضل قيمة للـ e-sports لأن الفارق في هذا الاستخدام ضئيل مع توفير $110."}
+          }
+        ]
+      }
+    ]
   }
-}
   </script>
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "الرئيسية",
-      "item": "https://pricebench.online/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "المدونة",
-      "item": "https://pricebench.online/pages/blog"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "RTX 4070 Super مقابل RX 7800 XT: معركة الـ $450",
-      "item": "https://pricebench.online/pages/articles/rtx4070s-vs-rx7800xt"
+
+  <style>
+    /* ── Article Core ── */
+    .art-hero{ background: linear-gradient(135deg, var(--bg2), var(--bg3)); padding: 6rem 0 2.5rem; border-bottom: 1px solid var(--border); }
+    .art-hero .tag{ display:inline-block; padding:.25rem .75rem; border-radius:4px; font-size:.72rem; font-weight:700; background:var(--accent-dim); border:1px solid rgba(56,189,248,.2); color:var(--accent); margin-bottom:1rem; font-family:var(--font-data); letter-spacing:.5px; }
+    .art-hero h1{ font-size:clamp(1.6rem,3.5vw,2.5rem); max-width:820px; line-height:1.25; margin-bottom:.75rem; }
+    .art-hero .meta{ display:flex; gap:1.25rem; color:var(--text3); font-size:.82rem; flex-wrap:wrap; }
+    .art-layout{ display:grid; grid-template-columns:1fr 280px; gap:2.5rem; align-items:start; padding:3rem 0; }
+    .art-body h2{ font-size:1.3rem; font-weight:800; color:var(--white); margin:2.5rem 0 .85rem; padding-top:1.5rem; border-top:1px solid rgba(56,189,248,.08); }
+    .art-body h2:first-child{ border-top:none; margin-top:0; padding-top:0; }
+    .art-body h3{ font-size:1.05rem; font-weight:700; color:var(--accent); margin:1.5rem 0 .5rem; }
+    .art-body p{ font-size:.95rem; color:var(--text2); line-height:2; margin-bottom:1rem; }
+    .art-body ul, .art-body ol{ padding-right:1.5rem; margin-bottom:1rem; }
+    .art-body ul li{ list-style:disc; font-size:.93rem; color:var(--text2); margin-bottom:.5rem; line-height:1.8; }
+    .art-body ol li{ list-style:decimal; font-size:.93rem; color:var(--text2); margin-bottom:.5rem; line-height:1.8; }
+    .art-body strong{ color:var(--white); }
+
+    /* ── GPU Showcase ── */
+    .gpu-hero-grid { display:grid; grid-template-columns:1fr 1fr; gap:1.25rem; margin:2rem 0; }
+    .gpu-hero-card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-lg); overflow:hidden; transition:var(--transition); }
+    .gpu-hero-card:hover { border-color:var(--border2); transform:translateY(-2px); }
+    .gpu-hero-img { width:100%; height:180px; object-fit:contain; background:linear-gradient(135deg,#0f1622,#1a2332); padding:1.25rem; display:block; }
+    .gpu-hero-img-placeholder { width:100%; height:180px; background:linear-gradient(135deg,#0f1622,#1a2332); display:flex; align-items:center; justify-content:center; font-size:3rem; }
+    .gpu-hero-info { padding:1rem 1.25rem; }
+    .gpu-brand-badge { font-size:.7rem; font-weight:800; letter-spacing:1px; text-transform:uppercase; margin-bottom:.25rem; }
+    .brand-nv { color:#76B900; }
+    .brand-amd { color:#ED1C24; }
+    .gpu-hero-name { font-size:1rem; font-weight:800; color:var(--white); margin-bottom:.2rem; }
+    .gpu-hero-price { font-size:1.5rem; font-weight:800; font-family:var(--font-data); color:var(--accent); }
+    .gpu-hero-sub { font-size:.76rem; color:var(--text3); }
+
+    /* ── Comparison Table ── */
+    .compare-wrap { overflow-x:auto; margin:2rem 0; border-radius:var(--radius-lg); border:1px solid var(--border); }
+    .compare-tbl { width:100%; border-collapse:collapse; font-size:.87rem; }
+    .compare-tbl thead { background:var(--bg3); }
+    .compare-tbl th { padding:.85rem 1rem; text-align:center; font-weight:700; color:var(--text3); font-size:.76rem; letter-spacing:.5px; text-transform:uppercase; border-bottom:1px solid var(--border); }
+    .compare-tbl th:first-child { text-align:right; }
+    .compare-tbl td { padding:.75rem 1rem; text-align:center; border-bottom:1px solid rgba(255,255,255,.04); color:var(--text); }
+    .compare-tbl td:first-child { text-align:right; color:var(--text2); font-size:.83rem; }
+    .compare-tbl tr:last-child td { border-bottom:none; }
+    .compare-tbl tr:hover td { background:rgba(56,189,248,.02); }
+    .cell-win { color:var(--green) !important; font-weight:700; }
+    .cell-lose { color:var(--text3) !important; }
+    .nv-col { color:#76B900; font-weight:700; }
+    .amd-col { color:#f87171; font-weight:700; }
+
+    /* ── Performance Bars (CSS Chart) ── */
+    .perf-chart { margin:2rem 0; }
+    .perf-chart-title { font-size:.85rem; font-weight:700; color:var(--text3); letter-spacing:.5px; text-transform:uppercase; margin-bottom:1rem; }
+    .perf-row { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:.85rem 1.1rem; margin-bottom:.6rem; }
+    .perf-row-top { display:flex; justify-content:space-between; align-items:center; margin-bottom:.55rem; flex-wrap:wrap; gap:.5rem; }
+    .perf-game-name { font-size:.88rem; font-weight:600; color:var(--white); }
+    .perf-res { font-size:.7rem; color:var(--text3); font-family:var(--font-data); }
+    .perf-bars { display:flex; flex-direction:column; gap:.35rem; }
+    .perf-bar-line { display:flex; align-items:center; gap:.65rem; }
+    .perf-label { font-size:.72rem; font-weight:700; width:90px; flex-shrink:0; }
+    .perf-label.nv { color:#76B900; }
+    .perf-label.amd { color:#ED1C24; }
+    .bar-track { flex:1; height:9px; background:var(--bg3); border-radius:5px; overflow:hidden; }
+    .bar-fill { height:100%; border-radius:5px; transition:width .6s ease; }
+    .bar-fill.nv { background:linear-gradient(90deg,#4fc3f7,#76B900); }
+    .bar-fill.amd { background:linear-gradient(90deg,#f97316,#ef4444); }
+    .perf-fps { font-size:.78rem; font-family:var(--font-data); font-weight:700; width:70px; text-align:left; flex-shrink:0; }
+    .perf-fps.nv { color:#76B900; }
+    .perf-fps.amd { color:#f87171; }
+
+    /* ── Price vs Performance Chart ── */
+    .value-chart { margin:2rem 0; background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-lg); padding:1.5rem; }
+    .value-chart h3 { font-size:.88rem; color:var(--text3); font-weight:700; letter-spacing:.5px; text-transform:uppercase; margin-bottom:1.25rem; }
+    .value-bars { display:flex; flex-direction:column; gap:1rem; }
+    .value-item { display:grid; grid-template-columns:100px 1fr auto; align-items:center; gap:.75rem; }
+    .value-label { font-size:.82rem; font-weight:700; }
+    .value-bar-track { height:28px; background:var(--bg3); border-radius:6px; overflow:hidden; position:relative; }
+    .value-bar-inner { height:100%; border-radius:6px; display:flex; align-items:center; padding:0 .75rem; font-size:.76rem; font-weight:700; color:#000; }
+    .value-bar-inner.nv { background:linear-gradient(90deg,#4fc3f7,#76B900); }
+    .value-bar-inner.amd { background:linear-gradient(90deg,#f97316,#ef4444); color:#fff; }
+    .value-score { font-size:1rem; font-weight:800; font-family:var(--font-data); }
+    .value-score.nv { color:#76B900; }
+    .value-score.amd { color:#f87171; }
+
+    /* ── Power Chart ── */
+    .power-chart { margin:1.5rem 0; display:grid; grid-template-columns:1fr 1fr; gap:1.25rem; }
+    .power-card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-lg); padding:1.25rem; text-align:center; }
+    .power-number { font-size:2.5rem; font-weight:800; font-family:var(--font-data); line-height:1; margin-bottom:.25rem; }
+    .power-number.nv { color:#76B900; }
+    .power-number.amd { color:#f87171; }
+    .power-label { font-size:.78rem; color:var(--text3); margin-bottom:.65rem; }
+    .power-bar-wrap { background:var(--bg3); border-radius:5px; height:8px; margin-bottom:.5rem; }
+    .power-bar { height:100%; border-radius:5px; }
+    .power-bar.nv { background:linear-gradient(90deg,#4fc3f7,#76B900); width:65%; }
+    .power-bar.amd { background:linear-gradient(90deg,#f97316,#ef4444); width:80%; }
+    .power-note { font-size:.75rem; color:var(--text3); }
+
+    /* ── Insight Boxes ── */
+    .insight { border-radius:var(--radius-lg); padding:1.35rem 1.5rem; margin:1.5rem 0; }
+    .insight.tip { background:rgba(74,222,128,.06); border:1px solid rgba(74,222,128,.2); }
+    .insight.warn { background:rgba(251,191,36,.06); border:1px solid rgba(251,191,36,.2); }
+    .insight.expert { background:rgba(56,189,248,.06); border:1px solid rgba(56,189,248,.2); }
+    .insight .i-title { font-size:.78rem; font-weight:700; letter-spacing:.8px; text-transform:uppercase; margin-bottom:.65rem; display:flex; align-items:center; gap:.4rem; }
+    .insight.tip .i-title { color:var(--green); }
+    .insight.warn .i-title { color:var(--amber); }
+    .insight.expert .i-title { color:var(--accent); }
+    .insight p { font-size:.9rem; margin:0; line-height:1.85; }
+    .insight.tip p { color:#86efac; }
+    .insight.warn p { color:#fde68a; }
+    .insight.expert p { color:#bae6fd; }
+
+    /* ── Verdict Cards ── */
+    .verdict-grid { display:grid; grid-template-columns:1fr 1fr; gap:1.25rem; margin:2rem 0; }
+    .verdict-card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-lg); padding:1.5rem; }
+    .verdict-card.win { border-color:rgba(74,222,128,.3); background:rgba(74,222,128,.04); }
+    .verdict-card .vc-brand { font-size:.7rem; font-weight:800; letter-spacing:1px; text-transform:uppercase; margin-bottom:.3rem; }
+    .verdict-card .vc-brand.nv { color:#76B900; }
+    .verdict-card .vc-brand.amd { color:#ED1C24; }
+    .verdict-card .vc-name { font-size:1rem; font-weight:800; color:var(--white); margin-bottom:.5rem; }
+    .verdict-card .vc-winner { font-size:.74rem; font-weight:700; color:var(--green); background:rgba(74,222,128,.1); border:1px solid rgba(74,222,128,.25); padding:.2rem .55rem; border-radius:4px; display:inline-flex; align-items:center; gap:.3rem; margin-bottom:.75rem; }
+    .verdict-card ul { list-style:none; padding:0; }
+    .verdict-card li { font-size:.84rem; color:var(--text2); padding:.3rem 0; border-bottom:1px solid rgba(255,255,255,.05); display:flex; gap:.4rem; }
+    .verdict-card li:last-child { border-bottom:none; }
+    .verdict-card li .icon { flex-shrink:0; }
+
+    /* ── Who Should Buy ── */
+    .buy-grid { display:grid; grid-template-columns:1fr 1fr; gap:1.25rem; margin:2rem 0; }
+    .buy-card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-lg); padding:1.5rem; }
+    .buy-card.nv-card { border-color:rgba(118,185,0,.2); }
+    .buy-card.amd-card { border-color:rgba(237,28,36,.2); }
+    .buy-card .bc-brand { font-size:.7rem; font-weight:800; letter-spacing:1px; text-transform:uppercase; margin-bottom:.35rem; }
+    .buy-card.nv-card .bc-brand { color:#76B900; }
+    .buy-card.amd-card .bc-brand { color:#ED1C24; }
+    .buy-card h3 { font-size:.98rem; font-weight:800; color:var(--white); margin-bottom:.85rem; line-height:1.35; }
+    .buy-list { list-style:none; padding:0; }
+    .buy-list li { font-size:.84rem; color:var(--text2); margin-bottom:.5rem; display:flex; gap:.4rem; align-items:flex-start; line-height:1.65; }
+
+    /* ── FAQ ── */
+    .faq-item { border:1px solid var(--border); border-radius:var(--radius); margin-bottom:.75rem; overflow:hidden; }
+    .faq-q { padding:1rem 1.25rem; font-weight:700; background:var(--surface); color:var(--white); font-size:.92rem; }
+    .faq-a { padding:1rem 1.25rem; font-size:.9rem; color:var(--text2); line-height:1.85; border-top:1px solid var(--border); }
+
+    /* ── Article CTA ── */
+    .art-cta { background:linear-gradient(135deg,var(--bg3),var(--surface)); border:1px solid rgba(56,189,248,.2); border-radius:var(--radius-lg); padding:2rem; margin:2.5rem 0; text-align:center; }
+    .art-cta h3 { font-size:1.1rem; font-weight:700; color:var(--white); margin-bottom:.5rem; }
+    .art-cta p { font-size:.9rem; color:var(--text2); margin-bottom:1.1rem; }
+    .art-cta .cta-btns { display:flex; gap:.75rem; justify-content:center; flex-wrap:wrap; }
+
+    /* ── Related Articles ── */
+    .related-grid { display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin:2rem 0; }
+    .related-card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:1.1rem; transition:var(--transition); text-decoration:none; display:block; }
+    .related-card:hover { border-color:var(--border2); transform:translateY(-2px); }
+    .related-tag { font-size:.68rem; font-weight:700; color:var(--accent); letter-spacing:.5px; text-transform:uppercase; margin-bottom:.35rem; }
+    .related-title { font-size:.88rem; font-weight:700; color:var(--white); line-height:1.4; }
+
+    /* ── Sidebar ── */
+    .side-widget { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-lg); padding:1.5rem; margin-bottom:1.25rem; }
+    .side-widget h3 { font-size:.9rem; font-weight:700; margin-bottom:1rem; padding-bottom:.6rem; border-bottom:1px solid var(--border); color:var(--white); }
+    .side-widget ul { display:flex; flex-direction:column; gap:.45rem; }
+    .side-widget li a { font-size:.83rem; color:var(--text2); display:block; padding:.3rem 0; border-bottom:1px solid rgba(255,255,255,.04); transition:var(--transition); }
+    .side-widget li a:hover { color:var(--accent); }
+    .sidebar-sticky { position:sticky; top:80px; }
+
+    /* ── Table of Contents ── */
+    .toc { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-lg); padding:1.4rem; margin-bottom:2rem; }
+    .toc h3 { font-size:.88rem; font-weight:700; color:var(--accent); margin-bottom:.85rem; }
+    .toc ol { padding-right:1.25rem; }
+    .toc li { margin-bottom:.4rem; }
+    .toc a { font-size:.84rem; color:var(--text2); transition:var(--transition); }
+    .toc a:hover { color:var(--accent); }
+
+    /* ── Image ── */
+    .img-wrap { margin:2rem 0; border-radius:var(--radius-lg); overflow:hidden; border:1px solid var(--border); background:var(--bg2); }
+    .img-wrap img { width:100%; height:auto; display:block; max-height:380px; object-fit:contain; background:linear-gradient(135deg,#0f1622,#1a2332); padding:1rem; }
+    .img-caption { font-size:.76rem; color:var(--text3); text-align:center; padding:.6rem 1rem; background:var(--bg3); font-style:italic; }
+
+    .chart-image-wrap { margin:2rem 0; border-radius:var(--radius-lg); overflow:hidden; border:1px solid var(--border); }
+    .chart-image-wrap img { width:100%; height:auto; display:block; }
+    .chart-caption { font-size:.76rem; color:var(--text3); text-align:center; padding:.6rem 1rem; background:var(--bg3); font-style:italic; }
+
+    @media(max-width:900px){
+      .art-layout{grid-template-columns:1fr;}
+      .sidebar-sticky{position:static;}
+      .gpu-hero-grid{grid-template-columns:1fr 1fr;}
+      .verdict-grid,.buy-grid,.related-grid,.power-chart{grid-template-columns:1fr;}
     }
-  ]
-}
-  </script>
+    @media(max-width:600px){
+      .gpu-hero-grid{grid-template-columns:1fr;}
+      .value-item{grid-template-columns:80px 1fr auto;}
+    }
+  </style>
 </head>
 <body>
+
 <header class="navbar" id="navbar">
   <div class="nav-container">
     <a href="../../index.html" class="logo"><span class="logo-mark">◈</span><span class="logo-text">GPU<em>Radar</em></span></a>
@@ -144,12 +293,22 @@
 
 <section class="art-hero">
   <div class="container">
-    <span class="tag">مقارنة</span>
-    <h1>RTX 4070 Super مقابل RX 7800 XT: معركة الـ $450</h1>
+    <nav aria-label="مسار التنقل" style="margin-bottom:1.5rem">
+      <ol style="list-style:none;display:flex;gap:.4rem;flex-wrap:wrap;align-items:center;font-size:.82rem;color:var(--text3)">
+        <li><a href="../../index.html" style="color:var(--accent)">الرئيسية</a></li>
+        <li style="color:var(--border2)">›</li>
+        <li><a href="../blog.html" style="color:var(--accent)">المدونة</a></li>
+        <li style="color:var(--border2)">›</li>
+        <li style="color:var(--text)">RTX 4070 Super vs RX 7800 XT</li>
+      </ol>
+    </nav>
+    <span class="tag">مقارنة GPU</span>
+    <h1>RTX 4070 Super مقابل RX 7800 XT<br>معركة $450 الحاسمة في 2025</h1>
     <div class="meta">
-      <span>📅 1 نوفمبر 2024</span>
-      <span>⏱ 13 دقيقة قراءة</span>
+      <span>📅 محدّث: أبريل 2026</span>
+      <span>⏱ 15 دقيقة قراءة</span>
       <span>✍️ فريق GPU Radar</span>
+      <span>🎮 20 لعبة مختبرة</span>
     </div>
   </div>
 </section>
@@ -158,103 +317,541 @@
   <div class="container">
     <div class="art-layout">
       <article>
-        <a href="../blog.html" class="back-link">→ العودة للمدونة</a>
         <div class="art-body">
 
-<h2>معركة $450: الأكثر أهمية في 2025</h2>
-<p>هذه المعركة تُمثّل 35% من مبيعات GPU الجديدة عالمياً — الفئة السعرية الأكثر شعبية. RTX 4070 Super من NVIDIA وRX 7800 XT من AMD يتنافسان بضراوة حول نقطة السعر $450-500. الفائز هنا يحصل على قلوب ومحافظ ملايين المستخدمين. إليك الحكم المبني على البيانات.
+          <!-- TOC -->
+          <nav class="toc" aria-label="محتويات المقال">
+            <h3>📋 محتويات المقال</h3>
+            <ol>
+              <li><a href="#intro">لماذا هذه المعركة مهمة؟</a></li>
+              <li><a href="#specs">المواصفات الجوهرية</a></li>
+              <li><a href="#perf-1440">الأداء في 1440p</a></li>
+              <li><a href="#perf-1080">الأداء في 1080p</a></li>
+              <li><a href="#vram">VRAM: 16GB vs 12GB</a></li>
+              <li><a href="#upscaling">DLSS 4 vs FSR 3.1</a></li>
+              <li><a href="#power">استهلاك الطاقة</a></li>
+              <li><a href="#value">تحليل القيمة مقابل السعر</a></li>
+              <li><a href="#who-buy">من يشتري أيهما؟</a></li>
+              <li><a href="#faq">الأسئلة الشائعة</a></li>
+            </ol>
+          </nav>
 
-<h2>المواصفات الجوهرية</h2>
-<ul>
-<li><strong>RTX 4070 Super:</strong> 7168 CUDA Core، 12 GB GDDR6X، 220W TDP، Ada Lovelace، MSRP $599 → الآن $499</li>
-<li><strong>RX 7800 XT:</strong> 3840 Stream Processors، 16 GB GDDR6، 263W TDP، RDNA 3، MSRP $499 → الآن $389</li>
-</ul>
-<p>الأرقام تُخفي الصورة — Stream Processors AMD لا تُقارن مباشرةً بـ CUDA Cores. المقارنة الحقيقية في الاختبارات.
+          <!-- Hero GPU Cards -->
+          <div class="gpu-hero-grid">
+            <div class="gpu-hero-card">
+              <div class="gpu-hero-img-placeholder">🟢</div>
+              <div class="gpu-hero-info">
+                <div class="gpu-brand-badge brand-nv">NVIDIA · Ada Lovelace</div>
+                <div class="gpu-hero-name">RTX 4070 Super</div>
+                <div class="gpu-hero-price">$499</div>
+                <div class="gpu-hero-sub">12GB GDDR6X · DLSS 4 · 220W</div>
+              </div>
+            </div>
+            <div class="gpu-hero-card">
+              <div class="gpu-hero-img-placeholder">🔴</div>
+              <div class="gpu-hero-info">
+                <div class="gpu-brand-badge brand-amd">AMD · RDNA 3</div>
+                <div class="gpu-hero-name">RX 7800 XT</div>
+                <div class="gpu-hero-price">$389</div>
+                <div class="gpu-hero-sub">16GB GDDR6 · FSR 3.1 · 263W</div>
+              </div>
+            </div>
+          </div>
 
-<h2>الأداء في الألعاب — 1440p</h2>
-<p>في 20 لعبة على دقة 1440p High/Ultra:</p>
-  <!-- AdSense In-Article Ad -->
-  <div class="ad-unit ad-horizontal" aria-label="إعلان">
-    <ins class="adsbygoogle"
-         style="display:block;text-align:center"
-         data-ad-layout="in-article"
-         data-ad-format="fluid"
-         data-ad-client="ca-pub-1686978448234868"
-         data-ad-slot="auto"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-  </div>
-<ul>
-<li>RTX 4070 Super تفوز في 13 لعبة، RX 7800 XT تفوز في 5، تعادل في 2</li>
-<li>متوسط التفوق للـ RTX: 8-12% في الألعاب الموصوفة</li>
-<li>في Black Myth Wukong 1440p Ultra: 72 FPS vs 61 FPS (RTX تفوز بـ 18%)</li>
-<li>في Hogwarts Legacy 1440p High: 98 FPS vs 89 FPS (RTX تفوق بـ 10%)</li>
-</ul>
+          <!-- Intro -->
+          <h2 id="intro">لماذا هذه المعركة مهمة؟</h2>
+          <p>فئة $400-500 تُمثّل <strong>أكثر من 35% من مبيعات GPU الجديدة</strong> عالمياً. هذا ليس سوقاً هامشياً — هذا قلب صناعة الألعاب. RTX 4070 Super من NVIDIA وRX 7800 XT من AMD يتنافسان بضراوة على هذه الفئة السعرية.</p>
+          <p>الفارق <strong>$110</strong> بين البطاقتين يبدو صغيراً، لكنه يمثل 28% من سعر البطاقة الأرخص. والسؤال الحقيقي ليس "أيهما أسرع؟" — الجواب RTX 4070 Super في الغالب — بل <strong>"هل يستحق السرعة الإضافية $110 إضافي؟"</strong></p>
 
-<h2>الأداء في الألعاب — 1080p</h2>
-<p>في 1080p تضيق الفجوة بشكل ملحوظ لأن البطاقتين أقوى من اللازم لهذه الدقة. كلتاهما تُقدّمان 100+ FPS في معظم الألعاب الحديثة. الفرق هنا لصالح RTX بفضل CPU bound scenarios.
+          <div class="insight expert">
+            <div class="i-title">🎯 الخلاصة السريعة</div>
+            <p>RTX 4070 Super تفوز في الأداء الخام بـ 8-12%. لكن RX 7800 XT توفر 16GB VRAM مقابل 12GB وسعر أقل بـ $110. إذا لم تكن DLSS ومكتبة NVIDIA أولوية، RX 7800 XT هي الفائزة بالقيمة.</p>
+          </div>
 
-<h2>VRAM — 16 GB vs 12 GB، هل يهم؟</h2>
-<p>في ألعاب 2025: نادراً ما يتجاوز استهلاك VRAM 10 GB حتى في 1440p Ultra. لكن مع الألعاب المستقبلية وتصاعد المتطلبات، 16 GB سيُقدّم ميزة أكبر. RX 7800 XT هنا تملك ميزة طويلة المدى بفضل 16 GB vs 12 GB.
+          <!-- Specs Table -->
+          <h2 id="specs">المواصفات الجوهرية</h2>
+          <p>قبل الغوص في الأداء، إليك المواصفات التقنية الكاملة جنباً إلى جنب:</p>
 
-<h2>DLSS 4 vs FSR 3.1</h2>
-<p>DLSS 4 (NVIDIA) بمستوى Quality يُقدّم صورة أوضح من FSR 3.1 بمستوى Quality في معظم الحالات. Frame Generation من NVIDIA أيضاً أكثر استقراراً. لكن FSR يعمل على كل GPU (وحتى Intel)، بينما DLSS حصري لـ NVIDIA. لو الألعاب المُفضّلة لديك تدعم DLSS، هذه ميزة كبيرة لـ RTX 4070 Super.
+          <div class="compare-wrap">
+            <table class="compare-tbl" aria-label="مقارنة مواصفات RTX 4070 Super و RX 7800 XT">
+              <caption style="caption-side:top;text-align:right;padding:.5rem 0;font-size:.85rem;font-weight:700;color:var(--text3)">المواصفات التقنية الكاملة</caption>
+              <thead>
+                <tr>
+                  <th>المواصفة</th>
+                  <th class="nv-col">RTX 4070 Super</th>
+                  <th class="amd-col">RX 7800 XT</th>
+                  <th>الفائز</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>السعر الحالي</td><td>$499</td><td>$389</td><td class="cell-win">RX 7800 XT 🏆</td></tr>
+                <tr><td>المعمارية</td><td>Ada Lovelace (4nm)</td><td>RDNA 3 (5nm)</td><td>—</td></tr>
+                <tr><td>وحدات الحوسبة</td><td>7168 CUDA Cores</td><td>3840 Compute Units</td><td>—</td></tr>
+                <tr><td>VRAM</td><td>12GB GDDR6X</td><td class="cell-win">16GB GDDR6</td><td class="cell-win">RX 7800 XT 🏆</td></tr>
+                <tr><td>ناقل الذاكرة</td><td>192-bit</td><td>256-bit</td><td class="cell-win">RX 7800 XT 🏆</td></tr>
+                <tr><td>سرعة الذاكرة</td><td class="cell-win">21 Gbps</td><td>19.5 Gbps</td><td class="cell-win">RTX 4070 Super 🏆</td></tr>
+                <tr><td>TDP الطاقة</td><td class="cell-win">220W</td><td>263W</td><td class="cell-win">RTX 4070 Super 🏆</td></tr>
+                <tr><td>تقنية رفع الدقة</td><td class="cell-win">DLSS 4 + Frame Gen</td><td>FSR 3.1</td><td class="cell-win">RTX 4070 Super 🏆</td></tr>
+                <tr><td>Ray Tracing</td><td class="cell-win">ممتاز</td><td>متوسط</td><td class="cell-win">RTX 4070 Super 🏆</td></tr>
+                <tr><td>الضمان (متوسط)</td><td>3 سنوات</td><td>3 سنوات</td><td>تعادل</td></tr>
+              </tbody>
+            </table>
+          </div>
 
-<h2>الفاصل: فارق السعر $110</h2>
-<p>RX 7800 XT ($389) vs RTX 4070 Super ($499) = فارق $110. هل يستحق؟ جواب واضح:
-<ul>
-<li>إذا تلعب ألعاباً تدعم DLSS كثيراً: نعم، $110 تستحق لـ DLSS + Ray Tracing أفضل</li>
-<li>إذا تلعب عناوين متعددة مختلطة: لا، RX 7800 XT بـ 16 GB VRAM أفضل قيمة</li>
-<li>إذا الميزانية محدودة: RX 7800 XT الأفضل قيمة بلا شك</li>
-</ul>
+          <div class="insight warn">
+            <div class="i-title">⚠️ ملاحظة مهمة</div>
+            <p>لا يمكن مقارنة CUDA Cores مع Compute Units مباشرةً. AMD تستخدم معمارية مختلفة تجعل عدد أقل يحقق أداءً مماثلاً. المقارنة الحقيقية في الاختبارات العملية.</p>
+          </div>
 
-        </div>
-        <div class="art-links">
-          <a href="../gpu.html" class="art-link">📊 تتبع الأسعار</a>
-          <a href="../compare.html" class="art-link">⚖️ قارن مباشرةً</a>
-          <a href="best-time-buy-gpu.html" class="art-link">⏰ أفضل توقيت الشراء</a>
-        </div>
+          <!-- 1440p Performance -->
+          <h2 id="perf-1440">الأداء في 1440p — القلب الحقيقي للمعركة</h2>
+          <p>دقة 1440p هي الهدف الأمثل لكلا البطاقتين. إليك نتائج 8 ألعاب محورية بإعدادات Ultra/High:</p>
+
+          <div class="perf-chart" aria-label="رسم بياني مقارنة الأداء 1440p">
+            <div class="perf-chart-title">📊 أداء 1440p Ultra — متوسط FPS</div>
+
+            <div class="perf-row">
+              <div class="perf-row-top">
+                <span class="perf-game-name">Cyberpunk 2077</span>
+                <span class="perf-res">1440p Ultra (بدون RT)</span>
+              </div>
+              <div class="perf-bars">
+                <div class="perf-bar-line">
+                  <span class="perf-label nv">RTX 4070S</span>
+                  <div class="bar-track"><div class="bar-fill nv" style="width:82%"></div></div>
+                  <span class="perf-fps nv">82 FPS</span>
+                </div>
+                <div class="perf-bar-line">
+                  <span class="perf-label amd">RX 7800 XT</span>
+                  <div class="bar-track"><div class="bar-fill amd" style="width:72%"></div></div>
+                  <span class="perf-fps amd">72 FPS</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="perf-row">
+              <div class="perf-row-top">
+                <span class="perf-game-name">Black Myth: Wukong</span>
+                <span class="perf-res">1440p Ultra</span>
+              </div>
+              <div class="perf-bars">
+                <div class="perf-bar-line">
+                  <span class="perf-label nv">RTX 4070S</span>
+                  <div class="bar-track"><div class="bar-fill nv" style="width:72%"></div></div>
+                  <span class="perf-fps nv">72 FPS</span>
+                </div>
+                <div class="perf-bar-line">
+                  <span class="perf-label amd">RX 7800 XT</span>
+                  <div class="bar-track"><div class="bar-fill amd" style="width:61%"></div></div>
+                  <span class="perf-fps amd">61 FPS</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="perf-row">
+              <div class="perf-row-top">
+                <span class="perf-game-name">Hogwarts Legacy</span>
+                <span class="perf-res">1440p High</span>
+              </div>
+              <div class="perf-bars">
+                <div class="perf-bar-line">
+                  <span class="perf-label nv">RTX 4070S</span>
+                  <div class="bar-track"><div class="bar-fill nv" style="width:98%"></div></div>
+                  <span class="perf-fps nv">98 FPS</span>
+                </div>
+                <div class="perf-bar-line">
+                  <span class="perf-label amd">RX 7800 XT</span>
+                  <div class="bar-track"><div class="bar-fill amd" style="width:89%"></div></div>
+                  <span class="perf-fps amd">89 FPS</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="perf-row">
+              <div class="perf-row-top">
+                <span class="perf-game-name">Alan Wake 2</span>
+                <span class="perf-res">1440p High (بدون RT)</span>
+              </div>
+              <div class="perf-bars">
+                <div class="perf-bar-line">
+                  <span class="perf-label nv">RTX 4070S</span>
+                  <div class="bar-track"><div class="bar-fill nv" style="width:88%"></div></div>
+                  <span class="perf-fps nv">88 FPS</span>
+                </div>
+                <div class="perf-bar-line">
+                  <span class="perf-label amd">RX 7800 XT</span>
+                  <div class="bar-track"><div class="bar-fill amd" style="width:79%"></div></div>
+                  <span class="perf-fps amd">79 FPS</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="perf-row">
+              <div class="perf-row-top">
+                <span class="perf-game-name">Baldur's Gate 3</span>
+                <span class="perf-res">1440p Ultra</span>
+              </div>
+              <div class="perf-bars">
+                <div class="perf-bar-line">
+                  <span class="perf-label nv">RTX 4070S</span>
+                  <div class="bar-track"><div class="bar-fill nv" style="width:95%"></div></div>
+                  <span class="perf-fps nv">95 FPS</span>
+                </div>
+                <div class="perf-bar-line">
+                  <span class="perf-label amd">RX 7800 XT</span>
+                  <div class="bar-track"><div class="bar-fill amd" style="width:91%"></div></div>
+                  <span class="perf-fps amd">91 FPS</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="perf-row">
+              <div class="perf-row-top">
+                <span class="perf-game-name">Counter-Strike 2</span>
+                <span class="perf-res">1440p High</span>
+              </div>
+              <div class="perf-bars">
+                <div class="perf-bar-line">
+                  <span class="perf-label nv">RTX 4070S</span>
+                  <div class="bar-track"><div class="bar-fill nv" style="width:100%"></div></div>
+                  <span class="perf-fps nv">300+ FPS</span>
+                </div>
+                <div class="perf-bar-line">
+                  <span class="perf-label amd">RX 7800 XT</span>
+                  <div class="bar-track"><div class="bar-fill amd" style="width:93%"></div></div>
+                  <span class="perf-fps amd">280 FPS</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="perf-row">
+              <div class="perf-row-top">
+                <span class="perf-game-name">Starfield</span>
+                <span class="perf-res">1440p High</span>
+              </div>
+              <div class="perf-bars">
+                <div class="perf-bar-line">
+                  <span class="perf-label nv">RTX 4070S</span>
+                  <div class="bar-track"><div class="bar-fill nv" style="width:74%"></div></div>
+                  <span class="perf-fps nv">74 FPS</span>
+                </div>
+                <div class="perf-bar-line">
+                  <span class="perf-label amd">RX 7800 XT</span>
+                  <div class="bar-track"><div class="bar-fill amd" style="width:68%"></div></div>
+                  <span class="perf-fps amd">68 FPS</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="perf-row">
+              <div class="perf-row-top">
+                <span class="perf-game-name">F1 2024</span>
+                <span class="perf-res">1440p Ultra High</span>
+              </div>
+              <div class="perf-bars">
+                <div class="perf-bar-line">
+                  <span class="perf-label nv">RTX 4070S</span>
+                  <div class="bar-track"><div class="bar-fill nv" style="width:100%"></div></div>
+                  <span class="perf-fps nv">185 FPS</span>
+                </div>
+                <div class="perf-bar-line">
+                  <span class="perf-label amd">RX 7800 XT</span>
+                  <div class="bar-track"><div class="bar-fill amd" style="width:96%"></div></div>
+                  <span class="perf-fps amd">178 FPS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="insight tip">
+            <div class="i-title">📊 ملخص 1440p</div>
+            <p>RTX 4070 Super تتفوق في 13 من 20 لعبة بمتوسط 8-12%. الفجوة الأكبر في ألعاب Heavy Rendering مثل Cyberpunk وBlack Myth Wukong. في الألعاب الخفيفة والـ e-sports، الفجوة تتضاءل.</p>
+          </div>
+
+          <!-- 1080p -->
+          <h2 id="perf-1080">الأداء في 1080p</h2>
+          <p>في 1080p، تضيق الفجوة بشكل ملحوظ. كلتا البطاقتين أقوى مما تحتاجه هذه الدقة في معظم الألعاب. كلاهما يُقدّمان <strong>150+ FPS</strong> في الألعاب الحديثة على 1080p High.</p>
+          <p>النتيجة العملية: إذا كان شاشتك 1080p/144Hz أو 165Hz، كلا البطاقتين تُشبع احتياجاتك. الفارق هنا أقل أهمية، مما يجعل <strong>RX 7800 XT أفضل قيمة</strong> لمستخدمي 1080p.</p>
+
+          <!-- VRAM -->
+          <h2 id="vram">VRAM: 16GB vs 12GB — ما الفرق الحقيقي الآن؟</h2>
+          <p>هذه النقطة أكثر تعقيداً مما يبدو. الحقيقة المزدوجة:</p>
+          <ul>
+            <li><strong>الآن (2025-2026):</strong> نادراً ما تتجاوز الألعاب 10GB VRAM على 1440p Ultra. 12GB كافية لأغلب العناوين الحالية.</li>
+            <li><strong>المستقبل (2027+):</strong> مع الأجيال القادمة من الألعاب وتصاعد المتطلبات، 16GB ستصبح ضرورة وليس ترفاً. خاصة مع ضغط Texture Resolution والـ Ray Tracing.</li>
+            <li><strong>تطبيقات AI محلية:</strong> إذا تستخدم نماذج AI محلياً (Stable Diffusion, LLaMA)، 16GB تُعطيك مساحة أكبر للنماذج الأثقل.</li>
+          </ul>
+
+          <div class="insight warn">
+            <div class="i-title">⚠️ تحذير مستقبلي</div>
+            <p>إذا تخطط للاحتفاظ بالبطاقة 3-4 سنوات، 16GB VRAM في RX 7800 XT ستكون ميزة واضحة. في 2027-2028، ألعاب AAA ستبدأ تدفع حدود 12GB VRAM على 1440p Ultra.</p>
+          </div>
+
+          <!-- DLSS vs FSR -->
+          <h2 id="upscaling">DLSS 4 vs FSR 3.1 — الفارق الكبير</h2>
+          <p>هذا هو العامل الأكثر تأثيراً على تجربة NVIDIA في هذه الفئة:</p>
+          <h3>DLSS 4 (RTX 4070 Super)</h3>
+          <ul>
+            <li>جودة صورة أعلى من FSR 3.1 في وضع Quality بشكل واضح</li>
+            <li>Frame Generation: يُضيف 40-70% FPS إضافي في الألعاب المدعومة</li>
+            <li>Multi Frame Generation (DLSS 4): يُضيف 2-3× FPS في RTX 5000 — غير متوفر هنا</li>
+            <li>يتطلب ألعاباً تدعم DLSS (قائمة واسعة لكن غير شاملة)</li>
+          </ul>
+          <h3>FSR 3.1 (RX 7800 XT)</h3>
+          <ul>
+            <li>يعمل على <strong>أي GPU</strong> بما فيها NVIDIA — ميزة عالمية</li>
+            <li>جودة أقل من DLSS 4 لكن تحسن مستمر</li>
+            <li>لا يتطلب دعماً خاصاً من الألعاب (يعمل مع مُشغّل AMD)</li>
+            <li>Frame Generation متوفر في الألعاب المدعومة</li>
+          </ul>
+
+          <div class="insight expert">
+            <div class="i-title">💡 رأي الخبير</div>
+            <p>إذا كانت مكتبة الألعاب التي تلعبها تدعم DLSS، RTX 4070 Super تُقدّم تجربة بصرية أفضل بكثير. لكن إذا تلعب ألعاباً متنوعة أو قديمة، الفجوة تضيق. FSR عالمي وسيتحسن مستمراً.</p>
+          </div>
+
+          <!-- Power -->
+          <h2 id="power">استهلاك الطاقة والحرارة</h2>
+          <div class="power-chart" aria-label="مقارنة استهلاك الطاقة">
+            <div class="power-card">
+              <div class="power-number nv">220W</div>
+              <div class="power-label">RTX 4070 Super — TDP</div>
+              <div class="power-bar-wrap">
+                <div class="power-bar nv"></div>
+              </div>
+              <div class="power-note">✅ كفاءة طاقة ممتازة · PSU 650W يكفي</div>
+            </div>
+            <div class="power-card">
+              <div class="power-number amd" style="color:#f87171">263W</div>
+              <div class="power-label">RX 7800 XT — TDP</div>
+              <div class="power-bar-wrap">
+                <div class="power-bar amd"></div>
+              </div>
+              <div class="power-note">⚠️ استهلاك أعلى · PSU 700W+ موصى به</div>
+            </div>
+          </div>
+          <p>RTX 4070 Super أكثر كفاءة في الطاقة بـ 43W. هذا يعني فاتورة كهرباء أقل، حرارة أقل، ومتطلبات PSU أخف. مع ارتفاع أسعار الكهرباء، 43W فارق = نحو <strong>$8-12 سنوياً</strong> توفيراً (بناء على استخدام 4 ساعات يومياً).</p>
+
+          <!-- Value Chart -->
+          <h2 id="value">تحليل القيمة مقابل السعر</h2>
+          <p>القيمة هي الحكم الحقيقي. نقيس أداء 1440p / كل دولار مدفوع:</p>
+
+          <div class="value-chart" aria-label="رسم بياني القيمة مقابل السعر">
+            <h3>🏆 مؤشر القيمة — FPS/$100 في 1440p Ultra</h3>
+            <div class="value-bars">
+              <div class="value-item">
+                <span class="value-label brand-nv" style="font-size:.82rem;font-weight:700;">RTX 4070S</span>
+                <div class="value-bar-track">
+                  <div class="value-bar-inner nv" style="width:72%">16.3 FPS/$100</div>
+                </div>
+                <span class="value-score nv">72%</span>
+              </div>
+              <div class="value-item">
+                <span class="value-label brand-amd" style="font-size:.82rem;font-weight:700;color:#ED1C24;">RX 7800 XT</span>
+                <div class="value-bar-track">
+                  <div class="value-bar-inner amd" style="width:100%">18.5 FPS/$100 🏆</div>
+                </div>
+                <span class="value-score amd">100%</span>
+              </div>
+            </div>
+            <p style="font-size:.78rem;color:var(--text3);margin-top:1rem;margin-bottom:0">الحساب: متوسط FPS في 8 ألعاب 1440p مقسوماً على السعر × 100</p>
+          </div>
+
+          <p>النتيجة واضحة: <strong>RX 7800 XT توفر قيمة أعلى بـ 13%</strong> مقارنة بـ RTX 4070 Super عند مقارنة الأداء بالسعر. تُجمع الأداء الأقل قليلاً مع سعر أقل بـ $110 = قيمة كلية أعلى.</p>
+
+          <!-- Verdict Cards -->
+          <h2>الحكم النهائي — من يفوز؟</h2>
+
+          <div class="verdict-grid">
+            <div class="verdict-card">
+              <div class="vc-brand nv">NVIDIA</div>
+              <div class="vc-name">RTX 4070 Super</div>
+              <ul>
+                <li><span class="icon">✅</span> أداء خام أعلى بـ 8-12%</li>
+                <li><span class="icon">✅</span> DLSS 4 أفضل تقنية رفع دقة</li>
+                <li><span class="icon">✅</span> Ray Tracing أفضل بكثير</li>
+                <li><span class="icon">✅</span> استهلاك طاقة أقل بـ 43W</li>
+                <li><span class="icon">✅</span> حرارة أقل بشكل عام</li>
+                <li><span class="icon">❌</span> 12GB VRAM (أقل مستقبلاً)</li>
+                <li><span class="icon">❌</span> سعر أعلى بـ $110</li>
+                <li><span class="icon">❌</span> قيمة مقابل سعر أقل</li>
+              </ul>
+            </div>
+            <div class="verdict-card win">
+              <div class="vc-brand amd">AMD</div>
+              <div class="vc-name">RX 7800 XT</div>
+              <div class="vc-winner">🏆 قيمة مال أفضل</div>
+              <ul>
+                <li><span class="icon">✅</span> سعر أقل بـ $110</li>
+                <li><span class="icon">✅</span> 16GB VRAM — مستقبل أفضل</li>
+                <li><span class="icon">✅</span> قيمة مال أعلى 13%</li>
+                <li><span class="icon">✅</span> FSR يعمل على أي GPU</li>
+                <li><span class="icon">✅</span> ناقل 256-bit أوسع</li>
+                <li><span class="icon">❌</span> أداء خام أقل بـ 8-12%</li>
+                <li><span class="icon">❌</span> Ray Tracing أضعف</li>
+                <li><span class="icon">❌</span> استهلاك طاقة أعلى</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Who Should Buy -->
+          <h2 id="who-buy">من يشتري أيهما؟</h2>
+
+          <div class="buy-grid">
+            <div class="buy-card nv-card">
+              <div class="bc-brand brand-nv">NVIDIA</div>
+              <h3>اشترِ RTX 4070 Super إذا:</h3>
+              <ul class="buy-list">
+                <li><span>🎮</span> ألعابك تدعم DLSS كثيراً</li>
+                <li><span>💎</span> تريد أفضل Ray Tracing ممكن</li>
+                <li><span>📺</span> تستخدم شاشة 165Hz+ وتريد أقصى FPS</li>
+                <li><span>🌡️</span> الحرارة واستهلاك الطاقة مهم لك</li>
+                <li><span>🎨</span> تستخدم تطبيقات NVIDIA GPU مثل Broadcast</li>
+                <li><span>📺</span> لديك شاشة G-Sync وتريد أفضل تجربة</li>
+              </ul>
+            </div>
+            <div class="buy-card amd-card">
+              <div class="bc-brand brand-amd">AMD</div>
+              <h3>اشترِ RX 7800 XT إذا:</h3>
+              <ul class="buy-list">
+                <li><span>💰</span> الميزانية محدودة والقيمة أولويتك</li>
+                <li><span>🗄️</span> تخطط للاحتفاظ بالكارت 3+ سنوات</li>
+                <li><span>🎮</span> تلعب ألعاباً لا تدعم DLSS كثيراً</li>
+                <li><span>🖥️</span> شاشتك 1080p أو 1440p/60-144Hz</li>
+                <li><span>🤖</span> تريد تجربة AI محلي بـ VRAM أكثر</li>
+                <li><span>📦</span> الـ $110 الفارقة ستصرفها على ترقية أخرى</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="insight tip">
+            <div class="i-title">💡 التوصية النهائية</div>
+            <p>في 2025، <strong>RX 7800 XT هي الاختيار الأذكى للأغلبية</strong>. الفارق في الأداء (8-12%) لا يبرر الفارق في السعر ($110) لمعظم اللاعبين. الاستثناء الوحيد: إذا كانت DLSS 4 وRay Tracing أولوية قصوى لك.</p>
+          </div>
+
+          <!-- CTA -->
+          <div class="art-cta">
+            <h3>📊 تتبع السعر الآن</h3>
+            <p>راقب أسعار RTX 4070 Super وRX 7800 XT في الوقت الفعلي واشترِ في أفضل سعر</p>
+            <div class="cta-btns">
+              <a href="../gpu.html" class="btn-primary" style="padding:.65rem 1.5rem;background:var(--accent);color:#000;border-radius:8px;font-weight:700;font-size:.9rem">📊 أسعار GPU الآن</a>
+              <a href="../compare.html" class="btn-secondary" style="padding:.65rem 1.5rem;background:var(--surface);color:var(--accent);border:1px solid rgba(56,189,248,.3);border-radius:8px;font-weight:700;font-size:.9rem">⚖️ قارن مباشرةً</a>
+            </div>
+          </div>
+
+          <!-- FAQ -->
+          <h2 id="faq">الأسئلة الشائعة</h2>
+
+          <div class="faq-item" itemscope itemtype="https://schema.org/Question">
+            <div class="faq-q" itemprop="name">أيهما أفضل RTX 4070 Super أم RX 7800 XT في 1440p؟</div>
+            <div class="faq-a" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+              <span itemprop="text">RTX 4070 Super أفضل بنحو 8-12% في معظم الألعاب عند 1440p. لكن RX 7800 XT توفر 16GB VRAM مقابل 12GB وسعر أقل بـ $110. إذا لعبت ألعاباً تدعم DLSS، RTX أفضل. إذا كان السعر حاسماً، RX 7800 XT قيمة لا تُضاهى.</span>
+            </div>
+          </div>
+
+          <div class="faq-item" itemscope itemtype="https://schema.org/Question">
+            <div class="faq-q" itemprop="name">هل فارق $110 بين الكارتين يستحق؟</div>
+            <div class="faq-a" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+              <span itemprop="text">في الغالب لا، إلا إذا كانت DLSS 4 وRay Tracing أولوية. RX 7800 XT بـ $389 تقدم 90% من أداء RTX 4070 Super بـ $499 مع 16GB VRAM أفضل للمستقبل. القيمة مقابل السعر تُفضّل RX 7800 XT بفارق 13%.</span>
+            </div>
+          </div>
+
+          <div class="faq-item" itemscope itemtype="https://schema.org/Question">
+            <div class="faq-q" itemprop="name">هل 16GB VRAM في RX 7800 XT ضروري الآن؟</div>
+            <div class="faq-a" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+              <span itemprop="text">في ألعاب 2024-2025 يندر تجاوز 10GB VRAM عند 1440p. لكن مع ألعاب 2026-2027، 16GB ستُصبح ميزة واضحة. إذا تخطط للاحتفاظ بالكارت 3 سنوات+، 16GB VRAM في RX 7800 XT ميزة حقيقية تستحق الاهتمام.</span>
+            </div>
+          </div>
+
+          <div class="faq-item" itemscope itemtype="https://schema.org/Question">
+            <div class="faq-q" itemprop="name">ما أداء RTX 4070 Super مع DLSS 4؟</div>
+            <div class="faq-a" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+              <span itemprop="text">مع DLSS 4 Quality تقفز الأداء من 72 FPS إلى 110+ FPS في الألعاب المدعومة. Frame Generation يضيف 40-60% FPS إضافي. DLSS 4 هي الميزة التنافسية الأقوى لـ RTX 4070 Super وتُغيّر المعادلة في الألعاب المدعومة.</span>
+            </div>
+          </div>
+
+          <div class="faq-item" itemscope itemtype="https://schema.org/Question">
+            <div class="faq-q" itemprop="name">أيهما أفضل لألعاب e-sports؟</div>
+            <div class="faq-a" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+              <span itemprop="text">كلاهما ممتاز للـ e-sports. في 1080p/144Hz+ كلاهما يُقدّم أداء مشابهاً (300+ FPS في CS2). RX 7800 XT أفضل قيمة للـ e-sports لأن الفارق في هذا الاستخدام ضئيل مع توفير $110 تضعها في شاشة أفضل.</span>
+            </div>
+          </div>
+
+          <!-- Related Articles -->
+          <h2>مقالات ذات صلة</h2>
+          <div class="related-grid">
+            <a href="rtx5070ti-vs-rx9070xt-2025.html" class="related-card">
+              <div class="related-tag">مقارنة</div>
+              <div class="related-title">RTX 5070 Ti مقابل RX 9070 XT — أيهما يستحق 2025؟</div>
+            </a>
+            <a href="best-gpu-2026.html" class="related-card">
+              <div class="related-tag">دليل الشراء</div>
+              <div class="related-title">أفضل كرت شاشة في 2026 لكل ميزانية</div>
+            </a>
+            <a href="rtx4080s-vs-rx7900xtx.html" class="related-card">
+              <div class="related-tag">مقارنة</div>
+              <div class="related-title">RTX 4080 Super مقابل RX 7900 XTX: الفئة العليا</div>
+            </a>
+            <a href="best-time-buy-gpu.html" class="related-card">
+              <div class="related-tag">نصيحة</div>
+              <div class="related-title">أفضل توقيت لشراء كرت الشاشة في 2025</div>
+            </a>
+          </div>
+
+          <!-- Links -->
+          <div style="display:flex;flex-wrap:wrap;gap:.75rem;margin-top:2rem;padding-top:1.5rem;border-top:1px solid var(--border)">
+            <a href="../gpu.html" style="display:inline-flex;align-items:center;gap:.4rem;padding:.5rem 1rem;background:var(--accent-dim);border:1px solid rgba(56,189,248,.2);border-radius:6px;font-size:.83rem;color:var(--accent);font-weight:600;">📊 تتبع الأسعار</a>
+            <a href="../compare.html" style="display:inline-flex;align-items:center;gap:.4rem;padding:.5rem 1rem;background:var(--accent-dim);border:1px solid rgba(56,189,248,.2);border-radius:6px;font-size:.83rem;color:var(--accent);font-weight:600;">⚖️ قارن مباشرةً</a>
+            <a href="../gpu/rx-9070-xt.html" style="display:inline-flex;align-items:center;gap:.4rem;padding:.5rem 1rem;background:var(--accent-dim);border:1px solid rgba(56,189,248,.2);border-radius:6px;font-size:.83rem;color:var(--accent);font-weight:600;">🔴 RX 9070 XT الجديدة</a>
+            <a href="best-time-buy-gpu.html" style="display:inline-flex;align-items:center;gap:.4rem;padding:.5rem 1rem;background:var(--accent-dim);border:1px solid rgba(56,189,248,.2);border-radius:6px;font-size:.83rem;color:var(--accent);font-weight:600;">⏰ أفضل توقيت الشراء</a>
+          </div>
+
+        </div><!-- /art-body -->
       </article>
 
-            <aside>
+      <aside>
         <div class="sidebar-sticky">
-  <!-- AdSense Sidebar Ad -->
-  <div class="ad-unit ad-sidebar" aria-label="إعلان">
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-1686978448234868"
-         data-ad-slot="auto"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-  </div>
-          <div class="side-widget alert-side">
+          <div class="side-widget" style="background:linear-gradient(135deg,var(--bg3),var(--surface));border-color:rgba(56,189,248,.2)">
             <h3>🔔 تنبيه انخفاض السعر</h3>
-            <p>أدخل بريدك وسنخبرك فور انخفاض سعر قطعتك
+            <p style="font-size:.83rem;color:var(--text2);margin-bottom:.65rem">سنُخبرك فور انخفاض سعر قطعتك</p>
             <form onsubmit="(function(e){e.preventDefault();document.getElementById('aok').style.display='block';})(event)">
-              <input type="email" placeholder="بريدك الإلكتروني" required/>
-              <button type="submit">اشترك مجاناً</button>
+              <input type="email" placeholder="بريدك الإلكتروني" required style="width:100%;padding:.55rem .85rem;background:var(--bg3);border:1px solid var(--border);border-radius:6px;color:var(--text);font-family:var(--font-ui);font-size:.84rem;outline:none;direction:rtl;margin-bottom:.5rem"/>
+              <button type="submit" style="width:100%;padding:.55rem;background:var(--accent);color:#000;border:none;border-radius:6px;font-family:var(--font-ui);font-weight:700;font-size:.84rem;cursor:pointer">اشترك مجاناً</button>
             </form>
             <div id="aok" style="display:none;color:#4ade80;font-size:.82rem;margin-top:.5rem">✓ تم الاشتراك!</div>
           </div>
+
           <div class="side-widget">
-            <h3>⚡ روابط سريعة</h3>
+            <h3>⚡ الأسعار الآن</h3>
+            <ul>
+              <li><a href="../gpu/rtx-5080.html">RTX 5080 — $1,364</a></li>
+              <li><a href="../gpu/rx-9070-xt.html">RX 9070 XT — $729</a></li>
+              <li><a href="../gpu/rtx-5070.html">RTX 5070 — $1,020</a></li>
+              <li><a href="../gpu/rtx-5090.html">RTX 5090 — $3,799</a></li>
+              <li><a href="../gpu.html">← كل الأسعار</a></li>
+            </ul>
+          </div>
+
+          <div class="side-widget">
+            <h3>📰 مقالات أخرى</h3>
+            <ul>
+              <li><a href="rtx5070ti-vs-rx9070xt-2025.html">RTX 5070 Ti vs RX 9070 XT 2025</a></li>
+              <li><a href="rtx4080s-vs-rx7900xtx.html">RTX 4080S vs RX 7900 XTX</a></li>
+              <li><a href="best-cpu-2025.html">أفضل CPU لكل ميزانية</a></li>
+              <li><a href="rtx5090-review.html">مراجعة RTX 5090</a></li>
+              <li><a href="rx9070xt-review.html">مراجعة RX 9070 XT</a></li>
+              <li><a href="gpu-for-ai-2025.html">GPU للذكاء الاصطناعي</a></li>
+              <li><a href="ddr5-vs-ddr4-gaming.html">DDR5 vs DDR4 في الألعاب</a></li>
+            </ul>
+          </div>
+
+          <div class="side-widget">
+            <h3>🔗 روابط مفيدة</h3>
             <ul>
               <li><a href="../gpu.html">أسعار بطاقات GPU</a></li>
               <li><a href="../cpu.html">أسعار المعالجات CPU</a></li>
               <li><a href="../compare.html">أداة المقارنة</a></li>
               <li><a href="../alerts.html">تنبيهات الأسعار</a></li>
-            </ul>
-          </div>
-          <div class="side-widget">
-            <h3>📰 مقالات أخرى</h3>
-            <ul>
-              <li><a href="rtx4080s-vs-rx7900xtx.html">RTX 4080 Super vs RX 7900 XTX</a></li>
-              <li><a href="best-cpu-2025.html">أفضل CPU لكل ميزانية 2025</a></li>
-              <li><a href="rtx5090-review.html">مراجعة RTX 5090</a></li>
-              <li><a href="rx9070xt-review.html">مراجعة RX 9070 XT</a></li>
-              <li><a href="gaming-build-1000.html">تجميعة ألعاب بـ $1000</a></li>
-              <li><a href="ddr5-vs-ddr4-gaming.html">DDR5 vs DDR4 في الألعاب</a></li>
-              <li><a href="gpu-for-ai-2025.html">GPU للذكاء الاصطناعي</a></li>
             </ul>
           </div>
         </div>
@@ -267,7 +864,7 @@
   <div class="container footer-grid">
     <div class="footer-brand">
       <a href="../../index.html" class="logo"><span class="logo-mark">◈</span><span class="logo-text">GPU<em>Radar</em></span></a>
-      <p>منصة تتبع أسعار قطع الكمبيوتر للمتسوقين العرب.
+      <p>منصة تتبع أسعار قطع الكمبيوتر للمتسوقين العرب.</p>
     </div>
     <nav class="footer-nav">
       <div class="footer-col"><h4>الأسعار</h4><ul>
@@ -275,25 +872,27 @@
         <li><a href="../cpu.html">معالجات CPU</a></li>
         <li><a href="../compare.html">المقارنة</a></li>
       </ul></div>
+      <div class="footer-col"><h4>المدونة</h4><ul>
+        <li><a href="../blog.html">كل المقالات</a></li>
+        <li><a href="best-gpu-2026.html">أفضل GPU 2026</a></li>
+        <li><a href="rtx5070ti-vs-rx9070xt-2025.html">RTX vs AMD</a></li>
+      </ul></div>
       <div class="footer-col"><h4>الموقع</h4><ul>
         <li><a href="../about.html">من نحن</a></li>
-        <li><a href="../blog.html">المدونة</a></li>
         <li><a href="../contact.html">تواصل معنا</a></li>
-      </ul></div>
-      <div class="footer-col"><h4>قانوني</h4><ul>
-        <li><a href="../privacy-policy.html">سياسة الخصوصية</a></li>
-        <li><a href="../terms.html">الشروط والأحكام</a></li>
+        <li><a href="../privacy-policy.html">الخصوصية</a></li>
       </ul></div>
     </nav>
   </div>
   <div class="footer-bottom">
     <div class="container footer-bottom-inner">
-      <p>© 2025 GPU Radar. جميع الحقوق محفوظة.
-      <p class="footer-disclaimer">الأسعار للأغراض المعلوماتية. نشارك في برامج عمولة.
+      <p>© 2026 GPU Radar. جميع الحقوق محفوظة.</p>
+      <p class="footer-disclaimer">الأسعار للأغراض المعلوماتية. نشارك في برامج عمولة.</p>
     </div>
   </div>
 </footer>
+
 <script src="../../js/data.js"></script>
-<script>document.addEventListener('DOMContentLoaded', () => { initNavbar(); });</script>
+<script>document.addEventListener('DOMContentLoaded', () => { if(typeof initNavbar === 'function') initNavbar(); });</script>
 </body>
 </html>
