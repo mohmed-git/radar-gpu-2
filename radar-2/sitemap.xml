@@ -53,6 +53,86 @@
     <priority>0.6</priority>
   </url>
 
+  <!-- ═══ صفحات المنتجات الجديدة — GPU ═══ -->
+  <url>
+    <loc>https://pricebench.online/pages/gpu/rtx-5090.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://pricebench.online/pages/gpu/rtx-5080.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://pricebench.online/pages/gpu/rtx-5070.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://pricebench.online/pages/gpu/rtx-4090.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://pricebench.online/pages/gpu/rx-9070-xt.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://pricebench.online/pages/gpu/rx-9070.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://pricebench.online/pages/gpu/rtx-5060-ti.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- ═══ صفحات المنتجات الجديدة — CPU ═══ -->
+  <url>
+    <loc>https://pricebench.online/pages/cpu/ryzen-7-7800x3d.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://pricebench.online/pages/cpu/ryzen-5-7600.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://pricebench.online/pages/cpu/core-i7-14700k.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- ═══ مقالة البوابة الرئيسية ═══ -->
+  <url>
+    <loc>https://pricebench.online/pages/articles/best-gpu-2026.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
   <!-- ═══ المقالات الجديدة ═══ -->
   <url>
     <loc>https://pricebench.online/pages/articles/rtx5090-review</loc>
