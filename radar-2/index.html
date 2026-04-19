@@ -41,12 +41,16 @@
         "@id": "https://pricebench.online/#website",
         "url": "https://pricebench.online/",
         "name": "GPU Radar",
-        "description": "منصة تتبع أسعار GPU و CPU في الوقت الفعلي",
+        "alternateName": "جي بي يو رادار",
+        "description": "منصة عربية لتتبع أسعار بطاقات الرسوميات GPU والمعالجات CPU في الوقت الفعلي",
         "inLanguage": "ar",
         "potentialAction": {
           "@type": "SearchAction",
-          "target": "https://pricebench.online/search?q={search_term_string}",
-          "query-input": "required name=search_term_string"
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://pricebench.online/?q={search_term}"
+          },
+          "query-input": "required name=search_term"
         }
       },
       {
@@ -54,8 +58,23 @@
         "@id": "https://pricebench.online/#org",
         "name": "GPU Radar",
         "url": "https://pricebench.online/",
-        "logo": { "@type": "ImageObject", "url": "https://pricebench.online/assets/logo.png" },
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://pricebench.online/favicon.svg",
+          "width": 512,
+          "height": 512
+        },
+        "description": "منصة عربية متخصصة في تتبع أسعار قطع الكمبيوتر — GPU وCPU — مع مخططات تاريخية وأدوات مقارنة",
         "sameAs": ["https://twitter.com/GPURadarAR"]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://pricebench.online/#webpage",
+        "url": "https://pricebench.online/",
+        "name": "GPU Radar — أسعار بطاقات الرسوميات والمعالجات في الوقت الفعلي",
+        "isPartOf": { "@id": "https://pricebench.online/#website" },
+        "about": { "@id": "https://pricebench.online/#org" },
+        "inLanguage": "ar"
       }
     ]
   }
