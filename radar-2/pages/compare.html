@@ -118,6 +118,27 @@
 </header>
 
 <main>
+  <!-- Breadcrumbs SEO -->
+  <nav aria-label="مسار التنقل" style="background:var(--bg2);border-bottom:1px solid var(--border);padding:.65rem 0">
+    <div class="container">
+      <ol itemscope itemtype="https://schema.org/BreadcrumbList"
+          style="list-style:none;margin:0;padding:0;display:flex;align-items:center;gap:.4rem;font-size:.82rem;color:var(--text3)">
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a itemprop="item" href="https://pricebench.online/" style="color:var(--accent);text-decoration:none">
+            <span itemprop="name">الرئيسية</span>
+          </a>
+          <meta itemprop="position" content="1"/>
+        </li>
+        <li style="color:var(--border2)">›</li>
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <span itemprop="name" style="color:var(--text)">أداة المقارنة</span>
+          <meta itemprop="position" content="2"/>
+          <link itemprop="item" href="https://pricebench.online/pages/compare"/>
+        </li>
+      </ol>
+    </div>
+  </nav>
+
   <section class="page-hero">
     <div class="container"><h1>أداة مقارنة قطع الكمبيوتر</h1><p>قارن بين أي قطعتين جنباً إلى جنب — السعر، تاريخه، والقيمة الحقيقية</p></div>
   </section>
