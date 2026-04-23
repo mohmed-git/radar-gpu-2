@@ -2,280 +2,106 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-  <!-- ═══ الصفحات الرئيسية ═══ -->
+  <!-- الصفحات الرئيسية -->
   <url>
     <loc>https://pricebench.online/</loc>
-    <lastmod>2026-04-19</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://pricebench.online/pages/gpu.html</loc>
-    <lastmod>2026-04-19</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://pricebench.online/pages/cpu.html</loc>
-    <lastmod>2026-04-19</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://pricebench.online/pages/compare.html</loc>
-    <lastmod>2026-04-19</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://pricebench.online/pages/blog.html</loc>
-    <lastmod>2026-04-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://pricebench.online/pages/alerts.html</loc>
-    <lastmod>2026-04-19</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://pricebench.online/pages/about.html</loc>
-    <lastmod>2026-04-19</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
   </url>
 
-  <!-- ═══ صفحات منتجات GPU ═══ -->
+  <!-- صفحات منتجات GPU -->
   <url>
     <loc>https://pricebench.online/pages/gpu/rtx-5090.html</loc>
-    <lastmod>2026-04-19</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://pricebench.online/pages/gpu/rtx-5080.html</loc>
-    <lastmod>2026-04-19</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://pricebench.online/pages/gpu/rtx-5070.html</loc>
-    <lastmod>2026-04-19</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://pricebench.online/pages/gpu/rtx-5060-ti.html</loc>
-    <lastmod>2026-04-19</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://pricebench.online/pages/gpu/rx-9070-xt.html</loc>
-    <lastmod>2026-04-19</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://pricebench.online/pages/gpu/rx-9070.html</loc>
-    <lastmod>2026-04-19</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://pricebench.online/pages/gpu/rtx-4090.html</loc>
-    <lastmod>2026-04-19</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- ═══ صفحات منتجات CPU ═══ -->
+  <!-- صفحات منتجات CPU -->
   <url>
     <loc>https://pricebench.online/pages/cpu/ryzen-7-7800x3d.html</loc>
-    <lastmod>2026-04-19</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://pricebench.online/pages/cpu/ryzen-5-7600.html</loc>
-    <lastmod>2026-04-19</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://pricebench.online/pages/cpu/core-i7-14700k.html</loc>
-    <lastmod>2026-04-19</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
-
-  <!-- ═══ مقالات المقارنة (أولوية عالية) ═══ -->
-  <url>
-    <loc>https://pricebench.online/pages/articles/rtx5070ti-vs-rx9070xt-2025.html</loc>
-    <lastmod>2026-04-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-  </url>
-  <url>
-    <loc>https://pricebench.online/pages/articles/rtx4070s-vs-rx7800xt.html</loc>
-    <lastmod>2026-04-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://pricebench.online/pages/articles/rtx4080s-vs-rx7900xtx.html</loc>
-    <lastmod>2026-04-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.88</priority>
-  </url>
-  <url>
-    <loc>https://pricebench.online/pages/articles/rtx5090-vs-rtx4090.html</loc>
-    <lastmod>2026-04-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://pricebench.online/pages/articles/intel-vs-amd-2025.html</loc>
-    <lastmod>2026-04-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
-  </url>
-  <url>
-    <loc>https://pricebench.online/pages/articles/ddr5-vs-ddr4-gaming.html</loc>
-    <lastmod>2026-04-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.78</priority>
-  </url>
-
-  <!-- ═══ مقالات المراجعات (أولوية عالية) ═══ -->
-  <url>
-    <loc>https://pricebench.online/pages/articles/rtx5090-review.html</loc>
-    <lastmod>2026-04-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://pricebench.online/pages/articles/rx9070xt-review.html</loc>
-    <lastmod>2026-04-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://pricebench.online/pages/articles/rdna4-architecture.html</loc>
-    <lastmod>2026-04-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
-  </url>
-  <url>
-    <loc>https://pricebench.online/pages/articles/rtx-5000-series-complete-guide.html</loc>
-    <lastmod>2026-04-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.88</priority>
-  </url>
-  <url>
-    <loc>https://pricebench.online/pages/articles/rx9000-series-guide.html</loc>
-    <lastmod>2026-04-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <!-- ═══ دلائل الشراء والتحليل (أولوية متوسطة-عالية) ═══ -->
-  <url>
-    <loc>https://pricebench.online/pages/articles/best-gpu-2026.html</loc>
-    <lastmod>2026-04-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.92</priority>
-  </url>
-  <url>
-    <loc>https://pricebench.online/pages/articles/best-cpu-2025.html</loc>
-    <lastmod>2026-04-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.88</priority>
-  </url>
-  <url>
-    <loc>https://pricebench.online/pages/articles/best-time-buy-gpu.html</loc>
-    <lastmod>2026-04-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://pricebench.online/pages/articles/gpu-prices-drop-2025.html</loc>
-    <lastmod>2026-04-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.88</priority>
-  </url>
-  <url>
-    <loc>https://pricebench.online/pages/articles/gpu-price-predictions-2025.html</loc>
-    <lastmod>2026-04-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
-  </url>
-  <url>
-    <loc>https://pricebench.online/pages/articles/gpu-for-ai-2025.html</loc>
-    <lastmod>2026-04-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://pricebench.online/pages/articles/used-gpu-guide.html</loc>
-    <lastmod>2026-04-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
-  </url>
-  <url>
-    <loc>https://pricebench.online/pages/articles/gaming-build-1000.html</loc>
-    <lastmod>2026-04-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
-  </url>
-  <url>
-    <loc>https://pricebench.online/pages/articles/gaming-build-800.html</loc>
-    <lastmod>2026-04-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://pricebench.online/pages/articles/gpu-cooling-guide.html</loc>
-    <lastmod>2026-04-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://pricebench.online/pages/articles/psu-guide.html</loc>
-    <lastmod>2026-04-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://pricebench.online/pages/articles/monitor-gpu-match.html</loc>
-    <lastmod>2026-04-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.78</priority>
-  </url>
-  <url>
-    <loc>https://pricebench.online/pages/articles/overclocking-guide.html</loc>
-    <lastmod>2026-04-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.73</priority>
-  </url>
-  <url>
-    <loc>https://pricebench.online/pages/articles/nvme-ssd-guide-2025.html</loc>
-    <lastmod>2026-04-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.72</priority>
-  </url>
-  <url>
-    <loc>https://pricebench.online/pages/articles/gpu-brands-comparison.html</loc>
-    <lastmod>2026-04-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.78</priority>
-  </url>
-  <url>
-    <loc>https://pricebench.online/pages/articles/gaming-laptop-vs-desktop-2025.html</loc>
-    <lastmod>2026-04-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
   </url>
 
 </urlset>
