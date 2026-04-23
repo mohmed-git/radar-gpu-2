@@ -27,12 +27,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://pricebench.online/pages/alerts.html</loc>
-    <lastmod>2026-04-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
+  <!-- alerts removed: noindex page -->
   <url>
     <loc>https://pricebench.online/pages/about.html</loc>
     <lastmod>2026-04-23</lastmod>
