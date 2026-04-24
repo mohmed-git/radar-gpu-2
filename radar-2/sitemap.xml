@@ -5,96 +5,95 @@
   <!-- الصفحات الرئيسية -->
   <url>
     <loc>https://pricebench.online/</loc>
-    <lastmod>2026-04-23</lastmod>
+    <lastmod>2026-04-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://pricebench.online/pages/gpu.html</loc>
-    <lastmod>2026-04-23</lastmod>
+    <loc>https://pricebench.online/pages/gpu</loc>
+    <lastmod>2026-04-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://pricebench.online/pages/cpu.html</loc>
-    <lastmod>2026-04-23</lastmod>
+    <loc>https://pricebench.online/pages/cpu</loc>
+    <lastmod>2026-04-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://pricebench.online/pages/compare.html</loc>
-    <lastmod>2026-04-23</lastmod>
+    <loc>https://pricebench.online/pages/compare</loc>
+    <lastmod>2026-04-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- alerts removed: noindex page -->
   <url>
-    <loc>https://pricebench.online/pages/about.html</loc>
-    <lastmod>2026-04-23</lastmod>
+    <loc>https://pricebench.online/pages/about</loc>
+    <lastmod>2026-04-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
   </url>
 
   <!-- صفحات منتجات GPU -->
   <url>
-    <loc>https://pricebench.online/pages/gpu/rtx-5090.html</loc>
-    <lastmod>2026-04-23</lastmod>
+    <loc>https://pricebench.online/pages/gpu/rtx-5090</loc>
+    <lastmod>2026-04-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://pricebench.online/pages/gpu/rtx-5080.html</loc>
-    <lastmod>2026-04-23</lastmod>
+    <loc>https://pricebench.online/pages/gpu/rtx-5080</loc>
+    <lastmod>2026-04-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://pricebench.online/pages/gpu/rtx-5070.html</loc>
-    <lastmod>2026-04-23</lastmod>
+    <loc>https://pricebench.online/pages/gpu/rtx-5070</loc>
+    <lastmod>2026-04-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://pricebench.online/pages/gpu/rtx-5060-ti.html</loc>
-    <lastmod>2026-04-23</lastmod>
+    <loc>https://pricebench.online/pages/gpu/rtx-5060-ti</loc>
+    <lastmod>2026-04-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://pricebench.online/pages/gpu/rx-9070-xt.html</loc>
-    <lastmod>2026-04-23</lastmod>
+    <loc>https://pricebench.online/pages/gpu/rx-9070-xt</loc>
+    <lastmod>2026-04-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://pricebench.online/pages/gpu/rx-9070.html</loc>
-    <lastmod>2026-04-23</lastmod>
+    <loc>https://pricebench.online/pages/gpu/rx-9070</loc>
+    <lastmod>2026-04-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://pricebench.online/pages/gpu/rtx-4090.html</loc>
-    <lastmod>2026-04-23</lastmod>
+    <loc>https://pricebench.online/pages/gpu/rtx-4090</loc>
+    <lastmod>2026-04-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- صفحات منتجات CPU -->
   <url>
-    <loc>https://pricebench.online/pages/cpu/ryzen-7-7800x3d.html</loc>
-    <lastmod>2026-04-23</lastmod>
+    <loc>https://pricebench.online/pages/cpu/ryzen-7-7800x3d</loc>
+    <lastmod>2026-04-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://pricebench.online/pages/cpu/ryzen-5-7600.html</loc>
-    <lastmod>2026-04-23</lastmod>
+    <loc>https://pricebench.online/pages/cpu/ryzen-5-7600</loc>
+    <lastmod>2026-04-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://pricebench.online/pages/cpu/core-i7-14700k.html</loc>
-    <lastmod>2026-04-23</lastmod>
+    <loc>https://pricebench.online/pages/cpu/core-i7-14700k</loc>
+    <lastmod>2026-04-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
