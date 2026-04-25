@@ -1,21 +1,18 @@
+# robots.txt — GPU Radar (pricebench.online)
+# Last updated: 2026-04-25
+
 User-agent: *
 Allow: /
-Disallow: /api/
-Disallow: /admin/
+
+# Block admin page
+Disallow: /admin
 Disallow: /admin.html
-Disallow: /node_modules/
-Disallow: /.env
 
-# السماح لـ CSS و JS بالفهرسة (مهم لـ Google)
-Allow: /css/
-Allow: /js/
+# Block API routes
+Disallow: /api/
 
-User-agent: Googlebot
-Allow: /
-Allow: /css/
-Allow: /js/
-
-User-agent: Bingbot
-Allow: /
-
+# Sitemap
 Sitemap: https://pricebench.online/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1

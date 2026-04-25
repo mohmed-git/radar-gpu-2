@@ -60,9 +60,9 @@
     ]
   }
   </script>
-  <link rel="icon" type="image/svg+xml" href="../../favicon.svg"/>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="../../css/style.css"/>
+  <link rel="stylesheet" href="/css/style.css"/>
   <style>
     .prod-hero{background:var(--bg2);padding:6rem 0 2rem;border-bottom:1px solid var(--border)}
     .prod-layout{display:grid;grid-template-columns:1fr 300px;gap:2.5rem;align-items:start;padding:2.5rem 0}
@@ -122,17 +122,17 @@
 <body>
 <header class="navbar" id="navbar">
   <div class="nav-container">
-    <a href="../../" class="logo"><span class="logo-mark">◈</span><span class="logo-text">GPU<em>Radar</em></span></a>
+    <a href="/" class="logo"><span class="logo-mark">◈</span><span class="logo-text">GPU<em>Radar</em></span></a>
     <nav class="nav-menu" id="nav-menu">
-      <a href="../../" class="nav-link">الرئيسية</a>
-      <a href="../gpu" class="nav-link active">GPU</a>
-      <a href="../cpu" class="nav-link">CPU</a>
-      <a href="../compare" class="nav-link">المقارنة</a>
-      <a href="../blog" class="nav-link">المدونة</a>
-      <a href="../about" class="nav-link">من نحن</a>
+      <a href="/" class="nav-link">الرئيسية</a>
+      <a href="/pages/gpu" class="nav-link active">GPU</a>
+      <a href="/pages/cpu" class="nav-link">CPU</a>
+      <a href="/pages/compare" class="nav-link">المقارنة</a>
+      <a href="/pages/blog" class="nav-link">المدونة</a>
+      <a href="/pages/about" class="nav-link">من نحن</a>
     </nav>
     <div class="nav-actions">
-      <a href="../alerts" class="btn-alert"><span class="bell-dot"></span>تنبيهات</a>
+      <a href="/pages/alerts" class="btn-alert"><span class="bell-dot"></span>تنبيهات</a>
       <button class="burger" id="burger" aria-label="القائمة" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </div>
@@ -142,8 +142,8 @@
   <section class="prod-hero">
     <div class="container">
       <nav class="breadcrumb" aria-label="مسار التنقل">
-        <a href="../../">الرئيسية</a><span class="sep">›</span>
-        <a href="../gpu">بطاقات الرسوميات</a><span class="sep">›</span>
+        <a href="/">الرئيسية</a><span class="sep">›</span>
+        <a href="/pages/gpu">بطاقات الرسوميات</a><span class="sep">›</span>
         <span>NVIDIA RTX 5080</span>
       </nav>
       <span style="display:inline-block;padding:.25rem .75rem;background:var(--accent-dim);border:1px solid rgba(56,189,248,.2);border-radius:4px;font-size:.72rem;font-weight:700;color:var(--accent);margin-bottom:.75rem">NVIDIA · Flagship · GPU</span>
@@ -239,8 +239,8 @@
           </ul>
           <h3>🔴 اختر بديلاً إذا:</h3>
           <ul>
-            <li>ميزانيتك دون $1,000 — <a href="./rx-9070-xt">RX 9070 XT</a> أفضل قيمة بفارق كبير</li>
-            <li>تلعب بدقة 1080p فقط — <a href="./rtx-5060-ti">RTX 5060 Ti</a> تكفيك بأقل من نصف السعر</li>
+            <li>ميزانيتك دون $1,000 — <a href="/pages/gpu/rx-9070-xt">RX 9070 XT</a> أفضل قيمة بفارق كبير</li>
+            <li>تلعب بدقة 1080p فقط — <a href="/pages/gpu/rtx-5060-ti">RTX 5060 Ti</a> تكفيك بأقل من نصف السعر</li>
           </ul>
 
           <h2 id="faq">الأسئلة الشائعة</h2>
@@ -268,11 +268,11 @@
           <div style="background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:1.5rem;margin-top:2rem">
             <p style="margin:0 0 1rem;font-weight:700;color:var(--white)">📊 الخطوة التالية:</p>
             <div style="display:flex;flex-wrap:wrap;gap:.65rem">
-              <a href="../compare?a=rtx5080" style="display:inline-flex;align-items:center;gap:.35rem;padding:.5rem 1rem;background:var(--accent-dim);border:1px solid rgba(56,189,248,.2);border-radius:6px;font-size:.84rem;color:var(--accent);font-weight:600">⚖️ قارن RTX 5080 مع أي بطاقة</a>
-              <a href="../gpu" style="display:inline-flex;align-items:center;gap:.35rem;padding:.5rem 1rem;background:var(--accent-dim);border:1px solid rgba(56,189,248,.2);border-radius:6px;font-size:.84rem;color:var(--accent);font-weight:600">📊 جميع أسعار GPU</a>
-              <a href="../alerts" style="display:inline-flex;align-items:center;gap:.35rem;padding:.5rem 1rem;background:var(--accent-dim);border:1px solid rgba(56,189,248,.2);border-radius:6px;font-size:.84rem;color:var(--accent);font-weight:600">🔔 تنبيه انخفاض السعر</a>
-              <a href="./rx-9070-xt" style="display:inline-flex;align-items:center;gap:.35rem;padding:.5rem 1rem;background:var(--accent-dim);border:1px solid rgba(56,189,248,.2);border-radius:6px;font-size:.84rem;color:var(--accent);font-weight:600">📖 مراجعة RX 9070 XT</a>
-              <a href="../articles/best-gpu-2026" style="display:inline-flex;align-items:center;gap:.35rem;padding:.5rem 1rem;background:var(--accent-dim);border:1px solid rgba(56,189,248,.2);border-radius:6px;font-size:.84rem;color:var(--accent);font-weight:600">📖 أفضل GPU لكل ميزانية 2026</a>
+              <a href="/pages/compare?a=rtx5080" style="display:inline-flex;align-items:center;gap:.35rem;padding:.5rem 1rem;background:var(--accent-dim);border:1px solid rgba(56,189,248,.2);border-radius:6px;font-size:.84rem;color:var(--accent);font-weight:600">⚖️ قارن RTX 5080 مع أي بطاقة</a>
+              <a href="/pages/gpu" style="display:inline-flex;align-items:center;gap:.35rem;padding:.5rem 1rem;background:var(--accent-dim);border:1px solid rgba(56,189,248,.2);border-radius:6px;font-size:.84rem;color:var(--accent);font-weight:600">📊 جميع أسعار GPU</a>
+              <a href="/pages/alerts" style="display:inline-flex;align-items:center;gap:.35rem;padding:.5rem 1rem;background:var(--accent-dim);border:1px solid rgba(56,189,248,.2);border-radius:6px;font-size:.84rem;color:var(--accent);font-weight:600">🔔 تنبيه انخفاض السعر</a>
+              <a href="/pages/gpu/rx-9070-xt" style="display:inline-flex;align-items:center;gap:.35rem;padding:.5rem 1rem;background:var(--accent-dim);border:1px solid rgba(56,189,248,.2);border-radius:6px;font-size:.84rem;color:var(--accent);font-weight:600">📖 مراجعة RX 9070 XT</a>
+              <a href="/pages/articles/best-gpu-2026" style="display:inline-flex;align-items:center;gap:.35rem;padding:.5rem 1rem;background:var(--accent-dim);border:1px solid rgba(56,189,248,.2);border-radius:6px;font-size:.84rem;color:var(--accent);font-weight:600">📖 أفضل GPU لكل ميزانية 2026</a>
             </div>
           </div>
         </article>
@@ -339,24 +339,24 @@
     <div class="container cta-inner">
       <h2>هل تريد معرفة لحظة الشراء المثالية؟</h2>
       <p>فعّل تنبيهاً وسنخبرك عندما يصل سعر RTX 5080 للمستوى الذي تريده</p>
-      <a href="../alerts" class="btn-primary">فعّل التنبيه مجاناً</a>
+      <a href="/pages/alerts" class="btn-primary">فعّل التنبيه مجاناً</a>
     </div>
   </section>
 </main>
 <footer class="footer">
   <div class="container footer-grid">
     <div class="footer-brand">
-      <a href="../../" class="logo"><span class="logo-mark">◈</span><span class="logo-text">GPU<em>Radar</em></span></a>
+      <a href="/" class="logo"><span class="logo-mark">◈</span><span class="logo-text">GPU<em>Radar</em></span></a>
       <p>منصة تتبع أسعار قطع الكمبيوتر للمتسوقين العرب.</p>
     </div>
     <nav class="footer-nav">
-      <div class="footer-col"><h4>الأسعار</h4><ul><li><a href="../gpu">بطاقات GPU</a></li><li><a href="../cpu">معالجات CPU</a></li><li><a href="../compare">المقارنة</a></li></ul></div>
-      <div class="footer-col"><h4>الموقع</h4><ul><li><a href="../about">من نحن</a></li><li><a href="../blog">المدونة</a></li><li><a href="../contact">تواصل</a></li></ul></div>
-      <div class="footer-col"><h4>قانوني</h4><ul><li><a href="../privacy-policy">الخصوصية</a></li><li><a href="../terms">الشروط</a></li></ul></div>
+      <div class="footer-col"><h4>الأسعار</h4><ul><li><a href="/pages/gpu">بطاقات GPU</a></li><li><a href="/pages/cpu">معالجات CPU</a></li><li><a href="/pages/compare">المقارنة</a></li></ul></div>
+      <div class="footer-col"><h4>الموقع</h4><ul><li><a href="/pages/about">من نحن</a></li><li><a href="/pages/blog">المدونة</a></li><li><a href="/pages/contact">تواصل</a></li></ul></div>
+      <div class="footer-col"><h4>قانوني</h4><ul><li><a href="/pages/privacy-policy">الخصوصية</a></li><li><a href="/pages/terms">الشروط</a></li></ul></div>
     </nav>
   </div>
   <div class="footer-bottom"><div class="container footer-bottom-inner"><p>© 2026 GPU Radar. جميع الحقوق محفوظة.</p><p class="footer-disclaimer">الأسعار للأغراض المعلوماتية. نشارك في برامج عمولة.</p></div></div>
 </footer>
-<script src="../../js/data.js"></script>
+<script src="/js/data.js"></script>
 </body>
 </html>
