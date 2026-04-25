@@ -1,5 +1,27 @@
 # Netlify Redirects — GPU Radar
+# Last updated: 2026-04-25
 https://symphonious-choux-dbb39d.netlify.app/* https://pricebench.online/:splat 301!
+
+# ═══ OLD URL PATTERNS — Redirect any previously-crawled URLs ═══
+# Google may have crawled /gpu, /cpu, /compare without /pages/ prefix
+/gpu                         /pages/gpu                301
+/cpu                         /pages/cpu                301
+/compare                     /pages/compare            301
+/blog                        /pages/blog               301
+/about                       /pages/about              301
+/alerts                      /pages/alerts             301
+/contact                     /pages/contact            301
+
+# Old .html direct access at root
+/gpu.html                    /pages/gpu                301
+/cpu.html                    /pages/cpu                301
+/compare.html                /pages/compare            301
+
+# Trailing slash normalization
+/pages/gpu/                  /pages/gpu                301
+/pages/cpu/                  /pages/cpu                301
+/pages/compare/              /pages/compare            301
+/pages/blog/                 /pages/blog               301
 
 # ═══ Clean URLs: redirect .html → no extension (301 permanent) ═══
 
